@@ -1,4 +1,4 @@
-PYTHON_INTERPRETER="/usr/bin/env python3"
+PYTHON_INTERPRETER="python"
 PYTHON_SCRIPT="../approx_solution.py"
 
 for file in *; do
