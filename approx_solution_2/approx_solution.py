@@ -19,6 +19,7 @@ Logic:
 def run_approximation(v, adj):
     longest = pathlen = 0
     path = [v]
+    best_path = []
     visited = set(path)
     while True:
         # find the frontier and assign arbitrary odds based on their weight
@@ -27,37 +28,42 @@ def run_approximation(v, adj):
         for dv, dw in adj[v]:
             if not dv in visited:
                 frontier.append((dv, dw))
-                # still allow random selection of weight 0:
-                if dw == 0:
-                    odds.append(1)
-                else:
-                    odds.append(dw)
+                odds.append(dw)
 
         # stop when can't continue
         if len(frontier) == 0:
             break
+        
+        # shift weights to be strictly above 0
+        # negatives and zeros become 1
+        odds = [max(w,1) for w in odds]
 
+        
         # pick a vertex to go to next, and update the path accordingly
         dv, dw = random.choices(frontier, weights=odds)[0]
         pathlen += dw
-        longest = max(pathlen, longest)
         path.append(dv)
         visited.add(dv)
         v = dv
+        # update best
+        if pathlen > longest:
+            longest = pathlen
+            best_path = path.copy()
+        
 
-    return longest, "->".join(path)
+    return longest, "->".join(best_path)
 
 
 def worker(start_time, t, adj, best_result, verbose=False):
-    import random, time
     try:
+        import random, time
         while True:
             cur_time = time.time()
             if start_time + t <= cur_time:
                 break
             v = random.choice(list(adj.keys()))
             dlen, dpath = run_approximation(v, adj)
-            if verbose:
+            if verbose and dlen > 0:
                 print(f"{dlen} : {dpath}")
             # update shared best result safely
             if dlen > best_result["len"]:
@@ -66,7 +72,7 @@ def worker(start_time, t, adj, best_result, verbose=False):
                 if verbose:
                     print("New Best!")
     except KeyboardInterrupt:
-        print("Stopping Thread Execution...")
+        print("Stopping thread...")
 
 
 if __name__ == "__main__":
@@ -96,8 +102,7 @@ if __name__ == "__main__":
         u, v, w = input().split()
         adj[u].append((v, int(w)))
 
-    best_len = 0
-    best_path = []
+
     # run for time t
     with Manager() as manager:
         best_result = manager.dict({"len": 0, "path": ""})
@@ -114,6 +119,10 @@ if __name__ == "__main__":
             print("Time limit reached!")
         except KeyboardInterrupt:
             print("Keyboard Interrupted!")
+            for p in processes:
+                p.terminate()
+            for p in processes:
+                p.join()
 
         print(f"Longest path found: {best_result['len']}")
         print(f"Path: {best_result['path']}")
