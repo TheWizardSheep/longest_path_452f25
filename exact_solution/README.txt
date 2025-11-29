@@ -9,4 +9,16 @@ the number of clauses and n is the number of variables).
 file. Cite the complete command line.
 
 
+
+
 //PERMUTE EVERY COMBINATION OF V-1 EDGES (ITERTOOLS) AND CHECK IF ITS RIGHT
+// TEST CASE
+in:
+3 3
+a b 3
+b c 4
+a c 5
+
+out:
+7
+a b c
