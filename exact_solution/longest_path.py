@@ -10,23 +10,15 @@ edgeList = None
 def parse_graph():
     global graph
     global edgeList
-    graph = defaultdict(list)
+    graph = defaultdict(dict)
     edgeList = [] 
     with open(sys.argv[1], "r") as file:
         numV, numE = [int(num) for num in next(file).split()]
         for line in file:
-            u, v, w = [int(num) for num in line.split()]
+            u, v, w = line.split()
             edgeList.append((u, v))
-            graph[u].append((v, int(w)))
+            graph[u][v] = int(w)
         file.close()
-
-# Return the edge weight
-def weight(u, v):
-    for node in graph[u]:
-        if node[0] == v:
-            return node[1]
-    raise IndexError("Edge not found")
-
 
 # Actual algorithm here
 def find_path():
@@ -49,7 +41,7 @@ def find_path():
             print(f"testing ({u}, {v})")
             # First edge is always legal
             if (last_v is None):
-                combo_weight += weight(u, v)
+                combo_weight += graph[u][v]
                 vertices_seen.add(u)
                 vertices_seen.add(v)
                 last_v = v
@@ -60,7 +52,7 @@ def find_path():
                 break
             
             else:
-                combo_weight += weight(u, v)
+                combo_weight += graph[u][v]
                 vertices_seen.add(v)
                 last_v = v
 

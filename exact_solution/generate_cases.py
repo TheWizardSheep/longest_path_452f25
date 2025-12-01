@@ -19,10 +19,10 @@ Randomization process overview:
 
 # Constants
 NUM_CASES = 5
-MIN_EDGES = 10 # forced to be at least 1
-MAX_EDGES = 50
-MIN_VERTICES = 10 # forced to be at least 2
-MAX_VERTICES = 50
+MIN_EDGES = 5 # forced to be at least 1
+MAX_EDGES = 15
+MIN_VERTICES = 5 # forced to be at least 2
+MAX_VERTICES = 15
 MAX_WEIGHT = 10
 ALLOW_DUPLICATE_EDGES = False  # can two edges u->v with different weights exist?
 ALLOW_NEGATIVE_WEIGHTS = True # weights will either range from [0, MAX_WEIGHT] or [-MAX_WEIGHT, MAX_WEIGHT]
