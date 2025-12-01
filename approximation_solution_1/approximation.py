@@ -2,6 +2,7 @@ import os
 from random import random
 import networkx
 import time
+import sys
 
 global best_so_far
 global deadline
@@ -65,24 +66,41 @@ def approximation(text):
 
 
 if __name__ == "__main__":
+    # if an alternative path is provided, use that as the test_cases directory
+    time_limit = 10000000
+    results = []
+    
     base_dir = os.path.dirname(__file__)
     test_dir = os.path.join(base_dir, "test_cases")
+    if len(sys.argv) > 1:
+        if sys.argv[1]== "-t":
+            time_limit = int(sys.argv[2])
+        elif sys.argv[1] == "-d":
+            test_dir = os.path.join(base_dir, sys.argv[2])
+            if os.path.isdir(test_dir):
+                raise FileNotFoundError(f"Test directory found: {test_dir} when should be file")
+            deadline = time.time() + time_limit
+            with open(test_dir, "r") as f:
+                text = f.read()
+            weight, path = approximation(text)
+            results.append((1, os.path.basename(test_dir), " ".join(path) if path else "", weight))
+            
+        else:
+            test_dir = os.path.join(base_dir, sys.argv[1])
+            if not os.path.isdir(test_dir):
+                raise FileNotFoundError(f"Test directory not found: {test_dir}")
+            deadline = time.time() + time_limit
+            for idx, fname in enumerate(sorted(os.listdir(test_dir)), start=1):
+                fpath = os.path.join(test_dir, fname)
+                if not os.path.isfile(fpath):
+                    continue
+                with open(fpath, "r") as f:
+                    text = f.read()
+                weight, path = approximation(text)
+                path_str = " ".join(path) if path else ""
+                results.append((idx, fname, path_str, weight))
+
     output_file = os.path.join(base_dir, "test_cases","output", "output.txt")
-
-    if not os.path.isdir(test_dir):
-        raise FileNotFoundError(f"Test directory not found: {test_dir}")
-
-    results = []
-    for idx, fname in enumerate(sorted(os.listdir(test_dir)), start=1):
-        fpath = os.path.join(test_dir, fname)
-        if not os.path.isfile(fpath):
-            continue
-        with open(fpath, "r") as f:
-            text = f.read()
-        weight, path = approximation(text)
-        path_str = " ".join(path) if path else ""
-        results.append((idx, fname, path_str, weight))
-
     # write all results to output.txt
     with open(output_file, "w") as out:
         for idx, fname, path_str, weight in results:
