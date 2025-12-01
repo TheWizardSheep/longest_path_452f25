@@ -42,43 +42,50 @@ def find_path():
         combo_weight = 0
         last_v = None
         still_legal = True
+        # check for legality
         for u, v in combo:
-            vertices_seen.add(u)
-            # check for legality (Continuous path and no cycles)
-            if ((last_v == None) or (u == last_v) and not (v in vertices_seen)):
+            # First edge is always legal
+            if (last_v is None):
                 combo_weight += weight(u, v)
-            else:
+                vertices_seen.add(u)
+                vertices_seen.add(v)
+                last_v = v
+
+            # Check for a continous path and for cycles
+            elif (u != last_v) or (v in vertices_seen):
                 still_legal = False
                 break
-            last_v = v
+            
+            else:
+                combo_weight += weight(u, v)
+                vertices_seen.add(v)
+                last_v = v
 
         # Maintain the biggest legal weight
         if still_legal and (combo_weight > biggest[0]):
             biggest[0] = combo_weight
             biggest[1] = combo
 
-    # get all legal paths
-    return biggest  # TO BE CHANGED
+    return biggest  
 
 
 # Parse the results and format an output
-def generate_output(path, weight):
+def generate_output(weight, path):
     print("-------------\nOUTPUT:")
     print(weight)
-    vertices = []
-    for u, v in path:
-        if not(u in path):
-            vertices.append(u)
+    vertices = [path[0][0]]
+    for _, v in path:
+        vertices.append(v)
         
     for node in vertices:
         print(f"{node} ", end="")
-    print(f"{path[-1][1]}")
+    print()
 
 
 def main():
     parse_graph()
     weight, path = find_path()
-    generate_output(path, weight)
+    generate_output(weight, path)
 
 
 if __name__ == "__main__":
