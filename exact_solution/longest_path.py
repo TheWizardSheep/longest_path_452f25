@@ -23,10 +23,10 @@ def parse_graph():
 # Actual algorithm here
 def find_path():
     # generate edge combinations
-    combinations = []
-    for i in range(len(edgeList)):
-        combo = list(itertools.permutations(edgeList, i + 1))
-        combinations += combo
+    combinations = itertools.permutations(edgeList, 1)
+    for i in range(1, len(edgeList)):
+        combo = itertools.permutations(edgeList, i + 1)
+        combinations = itertools.chain(combinations, combo)
 
     # longest path weight, longest path
     biggest = [0, None]
@@ -68,13 +68,17 @@ def find_path():
 def generate_output(weight, path):
     print("-------------\nOUTPUT:")
     print(weight)
-    vertices = [path[0][0]]
-    for _, v in path:
-        vertices.append(v)
+    
+    if path == None:
+        print("No path found!")
+    else:
+        vertices = [path[0][0]]
+        for _, v in path:
+           vertices.append(v)
         
-    for node in vertices:
-        print(f"{node} ", end="")
-    print()
+        for node in vertices:
+            print(f"{node} ", end="")
+        print()
 
 
 def main():
