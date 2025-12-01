@@ -1,5 +1,6 @@
 from collections import defaultdict
 import itertools
+import sys
 
 graph = None
 edgeList = None
@@ -10,13 +11,14 @@ def parse_graph():
     global graph
     global edgeList
     graph = defaultdict(list)
-    edgeList = []
-    numV, numE = [int(num) for num in input().split()]
-    for _ in range(numE):
-        u, v, w = input().split()
-        edgeList.append((u, v))
-        graph[u].append((v, int(w)))
-
+    edgeList = [] 
+    with open(sys.argv[1], "r") as file:
+        numV, numE = [int(num) for num in next(file).split()]
+        for line in file:
+            u, v, w = [int(num) for num in line.split()]
+            edgeList.append((u, v))
+            graph[u].append((v, int(w)))
+        file.close()
 
 # Return the edge weight
 def weight(u, v):
@@ -44,6 +46,7 @@ def find_path():
         still_legal = True
         # check for legality
         for u, v in combo:
+            print(f"testing ({u}, {v})")
             # First edge is always legal
             if (last_v is None):
                 combo_weight += weight(u, v)
