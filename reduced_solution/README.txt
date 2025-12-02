@@ -1,8 +1,9 @@
--The O running time. Be as specific as possible. For example, if you
-are studying a graph problem, express the bounds in terms of V and
-E (and maybe even a ratio of these values). If your problem is defined
-by a number of variables and a number of clauses, be specific (m is
-the number of clauses and n is the number of variables).
+O running time:
 
-– An example of calling your program that works with a sample input
-file. Cite the complete command line.
+
+calling the program:
+
+
+generate some graphs that do and dont have hamiltonian paths
+generate a longest path input for the exact solution (ben)
+answer the question if the graph has a hamiltonian path ( v- 1)
