@@ -15,13 +15,20 @@ def parse_graph():
     global edgeList
     graph = defaultdict(dict)
     edgeList = []
-    with open(sys.argv[1], "r") as file:
-        numV, numE = [int(num) for num in next(file).split()]
-        for line in file:
-            u, v, w = line.split()
-            edgeList.append((u, v))
-            graph[u][v] = int(w)
-        file.close()
+    numV, numE = [int(num) for num in input().split()]
+    for _ in range(numE):
+        u, v, w = input().split()
+        edgeList.append((u, v))
+        graph[u][v] = int(w)
+
+    # Read in input as a file instead of STDIN
+    # with open(sys.argv[1], "r") as file:
+    #     numV, numE = [int(num) for num in next(file).split()]
+    #     for line in file:
+    #         u, v, w = line.split()
+    #         edgeList.append((u, v))
+    #         graph[u][v] = int(w)
+    #     file.close()
 
 
 # Actual algorithm here
