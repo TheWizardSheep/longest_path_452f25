@@ -1,0 +1,31 @@
+# Will's Approximate Solution!
+
+## Runtime
+This performs in O(n^2). 
+1. Create Graph O(V + E)
+2. Sort Edges by weight O(ElogE)
+3. Max Spanning Tree O(EV)
+    ->Could be really bad for dense graphs (O(V^3) worst case of every node connected)
+4. DFS with max weight heuristic (greedy) O(V^2)
+
+
+## Running this program
+To run this program, begin in this directory and call:
+```
+bash ./run_test_cases.sh
+```
+### Flags:
+-t amount of time for program to complete before terminating and returning current best answer
+-d override directory path
+**PROFESSOR MALLOY PLEASE RUN THIS:**
+```
+py .\approximation.py
+```
+This will pull the input from fast_script.txt, which is quite lengthy and I do not care to put the whole file here.
+*EXAMPLE:
+904 864 ### V E
+328 175 -1 ### Edges
+175 589 8
+684 843 5
+...
+...
