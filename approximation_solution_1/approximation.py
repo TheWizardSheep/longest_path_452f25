@@ -2,6 +2,7 @@ import os
 from random import random
 import networkx
 import time
+import sys
 
 global best_so_far
 global deadline
@@ -61,32 +62,52 @@ def approximation(text):
         if weight > best_so_far[0]:
             best_so_far = (weight, path)
 
-    return best_so_far
+    return best_so_far[0], best_so_far[1], n, e
 
 
 if __name__ == "__main__":
+    # if an alternative path is provided, use that as the test_cases directory
+    time_limit = 10000000
+    start = time.time()
+    results = []
+    
     base_dir = os.path.dirname(__file__)
     test_dir = os.path.join(base_dir, "test_cases")
-    output_file = os.path.join(base_dir, "test_cases","output", "output.txt")
+    
+    # set deadline before any processing
+    deadline = time.time() + time_limit
+    
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "-t":
+            time_limit = int(sys.argv[2])
+            deadline = time.time() + time_limit
+        elif sys.argv[1] == "-d":
+            test_dir = os.path.join(base_dir, sys.argv[2])
+            if not os.path.isfile(test_dir):
+                raise FileNotFoundError(f"Test file not found: {test_dir}")
+            with open(test_dir, "r") as f:
+                text = f.read()
+            weight, path, n, e = approximation(text)
+            results.append((1, os.path.basename(test_dir), " ".join(path) if path else "", weight, n, e, time.time() - start))  
+    else:
+        # default: process test_cases directory
+        if not os.path.isdir(test_dir):
+            raise FileNotFoundError(f"Test directory not found: {test_dir}")
+        for idx, fname in enumerate(sorted(os.listdir(test_dir)), start=1):
+            fpath = os.path.join(test_dir, fname)
+            if not os.path.isfile(fpath):
+                continue
+            with open(fpath, "r") as f:
+                text = f.read()
+            weight, path, n, e = approximation(text)
+            path_str = " ".join(path) if path else ""
+            results.append((idx, fname, path_str, weight, n, e, time.time() - start))
 
-    if not os.path.isdir(test_dir):
-        raise FileNotFoundError(f"Test directory not found: {test_dir}")
-
-    results = []
-    for idx, fname in enumerate(sorted(os.listdir(test_dir)), start=1):
-        fpath = os.path.join(test_dir, fname)
-        if not os.path.isfile(fpath):
-            continue
-        with open(fpath, "r") as f:
-            text = f.read()
-        weight, path = approximation(text)
-        path_str = " ".join(path) if path else ""
-        results.append((idx, fname, path_str, weight))
-
+    output_file = os.path.join(base_dir,"test_cases","output", "output.txt")
     # write all results to output.txt
     with open(output_file, "w") as out:
-        for idx, fname, path_str, weight in results:
-            out.write(f"TEST #{idx-1}:\n\tpath={path_str}\n\tweight={weight}\n\n")
+        for idx, fname, path_str, weight, n, e, t in results:
+            out.write(f"TEST #{idx-1}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tRUNTIME: {t:.4f} seconds\n\n")
 
     if results:
         print(f"Wrote {len(results)} results to {output_file}")

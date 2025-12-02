@@ -1,6 +1,0 @@
-import * from approximation.py
-test = """3 3
-a b 3
-b c 4
-a c 5"""
-
