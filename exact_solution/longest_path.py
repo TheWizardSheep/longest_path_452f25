@@ -5,6 +5,8 @@ import sys
 graph = None
 edgeList = None
 
+# Switch to true to see the program actively testing each edge
+debug = False
 
 # Read in input and build graph adjacency list
 def parse_graph():
@@ -38,7 +40,8 @@ def find_path():
         still_legal = True
         # check for legality
         for u, v in combo:
-            print(f"testing ({u}, {v})")
+            if (debug):
+                print(f"testing ({u}, {v})")
             # First edge is always legal
             if (last_v is None):
                 combo_weight += graph[u][v]
@@ -66,7 +69,8 @@ def find_path():
 
 # Parse the results and format an output
 def generate_output(weight, path):
-    print("-------------\nOUTPUT:")
+    if (debug):
+        print("-------------\nOUTPUT:")
     print(weight)
     
     if path == None:

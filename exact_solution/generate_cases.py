@@ -17,13 +17,16 @@ Randomization process overview:
 """
 
 
-# Constants
-NUM_CASES = 5
-MIN_EDGES = 2 # forced to be at least 1
-MAX_EDGES = 10
-MIN_VERTICES = 2 # forced to be at least 2
-MAX_VERTICES = 10
-MAX_WEIGHT = 10
+# Constants -- I think runtime is more heavily affected by E
+NUM_CASES = 50
+MIN_VERTICES = 5
+MAX_VERTICES = 12
+
+MIN_EDGES = int(1.2 * MIN_VERTICES)
+MAX_EDGES = int(1.1 * MAX_VERTICES)
+
+
+MAX_WEIGHT = 20
 ALLOW_DUPLICATE_EDGES = False  # can two edges u->v with different weights exist?
 ALLOW_NEGATIVE_WEIGHTS = True # weights will either range from [0, MAX_WEIGHT] or [-MAX_WEIGHT, MAX_WEIGHT]
 UNDIRECTED = False  # adds identical reversed edges to each edge generaated
@@ -44,6 +47,10 @@ def generate_graph():
     max_possible_edges = V * (V - 1)
     max_edges = min(MAX_EDGES, max_possible_edges)
     E = random.randint(max(1, min(MIN_EDGES, max_edges)), max_edges)
+
+    # Disallow having significantly more vertices than edges
+    if V > E:
+        E = V - 1
 
     # generate a collection of edges
     edges = set() if ALLOW_DUPLICATE_EDGES else dict()
