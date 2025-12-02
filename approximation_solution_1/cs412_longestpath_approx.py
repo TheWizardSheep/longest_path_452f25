@@ -1,178 +1,162 @@
-from collections import defaultdict
 import os
-from random import random
-import time
 import sys
+import time
+from random import random
+from collections import defaultdict
 
-global best_so_far
-global deadline
+# Globals that you configure at runtime
+graph = defaultdict(dict)
+edgeList = []
+deadline = float("inf")   
+file = None               
 
-def parse_graph(text):
-    """Populate global `graph` and `edgeList` from an input text string.
+def parse_graph():
+    global graph, edgeList
 
-    `graph` is a dict-of-dicts mapping u->v->weight (directed).
-    `edgeList` is a list of (u, v, w) tuples for all edges.
-    Returns (numV, numE, start_vertex, end_vertex).
-    """
-    global graph
-    global edgeList
     graph = defaultdict(dict)
     edgeList = []
-    lines = text.strip().splitlines()
-    if not lines:
-        return 0, 0, None, None
-    numV, numE = [int(num) for num in lines[0].split()]
-    
-    start_vertex = None
-    end_vertex = None
-    
-    for i, line in enumerate(lines[1:1+numE]):
+
+    if file is not None:
+        with open(file, "r") as f:
+            lines = f.read().strip().splitlines()
+    else:
+        # Read from stdin
+        first = input().strip()
+        if not first:
+            return 0, 0
+        lines = [first]
+        numV, numE = map(int, first.split())
+        for _ in range(numE):
+            line =input().strip()
+            if not line:
+                continue
+            lines.append(line)
+
+    # Parse header again in case we came from file
+    numV, numE = map(int, lines[0].split())
+
+    for line in lines[1:]:
+        if not line:
+            continue
         u, v, w = line.split()
         w = int(w)
-        # directed graph: store edge only u->v
-        graph[u][v] = w
         edgeList.append((u, v, w))
-        
-        # first vertex is start, second vertex is end
-        if i == 0:
-            start_vertex = u
-            end_vertex = v
-    
-    return numV, numE, start_vertex, end_vertex
+        graph[u][v] = w
 
-def approximation(text):
-    # build graph and edgeList from the provided text
-    n, e, start_vertex, end_vertex = parse_graph(text)
-    
-    if start_vertex is None or end_vertex is None:
-        return 0, [], n, e
+    return numV, numE
 
-    # For directed graphs, we don't need MST; just find the longest path from start to end
-    # DFS to find heaviest path from start to end in the DAG/directed graph
+
+def build_graph():
+    #Collect all vertices that appear in edgeList
+    vertices = set()
+    for u, v, _ in edgeList:
+        vertices.add(u)
+        vertices.add(v)
+    vertices = list(vertices)
+
+    dist = {v: float("-inf") for v in vertices}
+    for v in vertices:
+        dist[v] = 0
+
+    mst = defaultdict(dict)
+
+    if not vertices:
+        return mst  # empty graph
+
+    V = len(vertices)
+
+    # Run Bellman–Ford from each source
+    for _ in range(V - 1):
+        improved = False
+        for u, v, w in edgeList:
+            if dist[u] + w > dist[v]:
+                dist[v] = dist[u] + w
+                improved = True
+
+                # add to mst
+                prev_w = mst[u].get(v, float("-inf"))
+                if w > prev_w:
+                    mst[u][v] = w
+
+        if not improved:
+            break
+
+    return mst
+
+
+def approximation():
+    numV, numE = parse_graph()
+
+    # Build Bellman–Ford graph
+    mst = build_graph()
+
+    # Collect vertices again (in case some isolated nodes exist)
+    vertices = set()
+    for u, v, _ in edgeList:
+        vertices.add(u)
+        vertices.add(v)
+    vertices = list(vertices)
+
+    best_so_far = (-float("inf"), [])
+
     def dfs(curr, curr_path, curr_weight):
+        nonlocal best_so_far
         if time.time() > deadline:
-            return None
+            return  # Anytime: just bail and keep best_so_far
 
-        # if we reached the end vertex, return this path
-        if curr == end_vertex:
-            return (curr_weight, curr_path)
+        if curr_weight > best_so_far[0]:
+            best_so_far = (curr_weight, curr_path)
 
-        best = None
-        for neighbor, w in graph.get(curr, {}).items():
+        for neighbor, w in mst.get(curr, {}).items():
             if neighbor not in curr_path:
-                candidate = dfs(neighbor, curr_path + [neighbor], curr_weight + w)
-                if candidate is None:
-                    return None  # timeout
-                if best is None or candidate[0] > best[0]:
-                    best = candidate
-                elif candidate[0] == best[0] and best is not None:
-                    if random() < 0.5:
-                        best = candidate
-        
-        return best if best is not None else None
+                dfs(neighbor, curr_path + [neighbor], curr_weight + w)
 
-    # Start DFS from the start vertex
-    result = dfs(start_vertex, [start_vertex], 0)
+    # Start DFS from every vertex
+    for node in vertices:
+        if time.time() > deadline:
+            break
+        dfs(node, [node], 0)
+
+    return best_so_far[0], best_so_far[1], numV, numE
+
+
+if __name__ == "__main__":
+    # if an alternative path is provided, use that as the test_cases directory
+    start = time.time()
+    results = []
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    test_dir = os.path.join(base_dir, "test_cases")
     
-    if result is None:
-        return 0, [], n, e
-    
-    weight, path = result
-    return weight, path, n, e
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "-t":
+            time_limit = int(sys.argv[2])
+            deadline = time.time() + time_limit
+        elif sys.argv[1] == "-d":
+            test_dir = os.path.join(base_dir, sys.argv[2])
+            if not os.path.isdir(test_dir):
+                raise FileNotFoundError(f"Test folder not found: {test_dir}")
+            for idx, filename in enumerate(os.listdir(test_dir)):
+                file_path = os.path.join(test_dir, filename)
+                if (not os.path.isfile(file_path)) or (not filename.endswith(".txt")):
+                    continue
+                file = file_path
+                start = time.time()
+                weight, path, n, e = approximation()
+                results.append((idx, os.path.basename(file_path), " ".join(path) if path else "", weight, n, e, time.time() - start))  
+                output_file = os.path.join(base_dir,"test_cases","output", "output.txt")
+        # write all results to output.txt
+        with open(output_file, "w") as out:
+            for idx, fname, path_str, weight, n, e, t in results:
+                out.write(f"TEST #{idx}-{fname}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tpath={path_str}\n\tRUNTIME:{t:.4f} seconds\n\n")
 
+        if results:
+            print(f"Wrote {len(results)} results to {output_file}")
+        else:
+            print("No test files found; no output written.")
 
-# Modes supported:
-# - no stdin and no args: run test_cases/fast_script.txt
-# - stdin redirected: read single test from stdin
-# - --run-all or -a: run all files in test_cases/ and write aggregated output
-
-time_limit = 10000000
-start = time.time()
-results = []
-
-base_dir = os.path.dirname(__file__)
-test_dir = os.path.join(base_dir, "test_cases")
-output_file = os.path.join(base_dir, "output.txt")
-
-# helper to process a single input text and append to results
-def process_single(text, label="stdin"):
-    print(text)
-    weight, path, n, e = approximation(text)
-    path_str = " ".join(path) if path else ""
-    results.append((label, path_str, weight, n, e, time.time() - start))
-
-# parse simple args so flags can be provided in any order
-args = sys.argv[1:]
-run_all = False
-i = 0
-while i < len(args):
-    a = args[i]
-    if a in ("--run-all", "-a"):
-        run_all = True
-        i += 1
-    elif a in ("-t", "--time-limit"):
-        if i + 1 >= len(args):
-            print("Missing value for -t/--time-limit")
-            sys.exit(1)
-        try:
-            time_limit = int(args[i + 1])
-        except ValueError:
-            print("Invalid integer for time limit")
-            sys.exit(1)
-        i += 2
     else:
-        # ignore unknown args (or could error)
-        i += 1
-
-# set deadline (global) after parsing args
-deadline = time.time() + time_limit
-
-# run-all mode
-if run_all:
-    if not os.path.isdir(test_dir):
-        # raise FileNotFoundError(f"Test directory not found: {test_dir}")
-        pass
-    for idx, fname in enumerate(sorted(os.listdir(test_dir)), start=1):
-        fpath = os.path.join(test_dir, fname)
-        if not os.path.isfile(fpath):
-            continue
-        with open(fpath, "r") as f:
-            text = f.read()
-        process_single(text, label=fname)
-
-# default: run fast_script.txt inside test_cases
-else:
-    fast_file = os.path.join(test_dir, "fast_script.txt")
-    if not os.path.isfile(fast_file):
-        # raise FileNotFoundError(f"fast_script.txt not found in {test_dir}")
-        text = """11 13
-2 7 3
-3 9 19
-6 8 6
-6 4 -15
-8 10 -8
-8 11 17
-4 10 -20
-9 5 11
-11 6 -18
-3 11 5
-2 3 17
-9 6 -16
-10 2 20
-"""
-        process_single(text, label="default")
-        pass
-    else:
-        with open(fast_file, "r") as f:
-            text = f.read()
-        process_single(text, label=os.path.basename(fast_file))
-
-# write results to output.txt
-with open(output_file, "w") as out:
-    for idx, (label, path_str, weight, n, e, t) in enumerate(results, start=1):
-        out.write(f"TEST #{idx}: {label}\n\tV={n}\n\tE={e}\n\tpath={path_str}\n\tweight={weight}\n\tRUNTIME: {t:.4f} seconds\n\n")
-
-if results:
-    print(f"Wrote {len(results)} result(s) to {output_file}")
-else:
-    print("No test cases processed.")
+        print("Running from stdin!")
+        output_file = os.path.join(base_dir,"test_cases","output", "output.txt")
+        with open(output_file, "w") as out:
+            weight, path, n, e = approximation()
+            out.write(f"V={n}\nE={e}\nweight={weight}\npath={' '.join(path) if path else ''}\n")

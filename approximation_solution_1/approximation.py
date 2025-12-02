@@ -147,7 +147,7 @@ if __name__ == "__main__":
         # write all results to output.txt
         with open(output_file, "w") as out:
             for idx, fname, path_str, weight, n, e, t in results:
-                out.write(f"TEST #{idx}-{fname}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tpath={path_str}\n\tRUNTIME:{t:.4f} seconds\n\n")
+                out.write(f"TEST #{idx}-{fname}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tpath={path_str}\n\tRUNTIME:{t:.8f} seconds\n\n")
 
         if results:
             print(f"Wrote {len(results)} results to {output_file}")
