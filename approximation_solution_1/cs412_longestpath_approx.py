@@ -21,13 +21,13 @@ def parse_graph():
             lines = f.read().strip().splitlines()
     else:
         # Read from stdin
-        first = input().strip()
+        first = sys.stdin.readline().strip()
         if not first:
             return 0, 0
         lines = [first]
         numV, numE = map(int, first.split())
         for _ in range(numE):
-            line =input().strip()
+            line = sys.stdin.readline().strip()
             if not line:
                 continue
             lines.append(line)
@@ -47,42 +47,69 @@ def parse_graph():
 
 
 def build_graph():
-    #Collect all vertices that appear in edgeList
+    # Collect all vertices
     vertices = set()
     for u, v, _ in edgeList:
         vertices.add(u)
         vertices.add(v)
     vertices = list(vertices)
 
-    dist = {v: float("-inf") for v in vertices}
-    for v in vertices:
-        dist[v] = 0
+    if not vertices:
+        return defaultdict(dict)
+
+    # === UNION-FIND STRUCTURES ===
+    parent = {v: v for v in vertices}
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(a, b):
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            parent[rb] = ra
 
     mst = defaultdict(dict)
 
-    if not vertices:
-        return mst  # empty graph
+    num_components = len(vertices)
 
+    # === Boruvka ===
+    while num_components > 1:
+        best_outgoing = {}
+
+        for u, v, w in edgeList:
+            cu, cv = find(u), find(v)
+            if cu != cv:
+                if cu not in best_outgoing or w > best_outgoing[cu][2]:
+                    best_outgoing[cu] = (u, v, w)
+
+        if not best_outgoing:
+            break  # cannot connect further; graph is disconnected
+
+        for cu, (u, v, w) in best_outgoing.items():
+            if find(u) != find(v):
+                mst[u][v] = w
+                union(u, v)
+                num_components -= 1
+
+    # === Bellman–Ford relaxations ===
+
+    dist = {v: 0 for v in vertices}
     V = len(vertices)
 
-    # Run Bellman–Ford from each source
     for _ in range(V - 1):
         improved = False
-        for u, v, w in edgeList:
-            if dist[u] + w > dist[v]:
-                dist[v] = dist[u] + w
-                improved = True
-
-                # add to mst
-                prev_w = mst[u].get(v, float("-inf"))
-                if w > prev_w:
-                    mst[u][v] = w
-
+        for u in mst:
+            for v, w in mst[u].items():
+                if dist[u] + w > dist[v]:
+                    dist[v] = dist[u] + w
+                    improved = True
         if not improved:
             break
 
     return mst
-
 
 def approximation():
     numV, numE = parse_graph()
@@ -90,7 +117,7 @@ def approximation():
     # Build Bellman–Ford graph
     mst = build_graph()
 
-    # Collect vertices again (in case some isolated nodes exist)
+    # Collect vertices again
     vertices = set()
     for u, v, _ in edgeList:
         vertices.add(u)
@@ -141,13 +168,14 @@ if __name__ == "__main__":
                     continue
                 file = file_path
                 start = time.time()
+                print(f"Processing TEST #{idx}-{filename}...")
                 weight, path, n, e = approximation()
                 results.append((idx, os.path.basename(file_path), " ".join(path) if path else "", weight, n, e, time.time() - start))  
                 output_file = os.path.join(base_dir,"test_cases","output", "output.txt")
         # write all results to output.txt
         with open(output_file, "w") as out:
             for idx, fname, path_str, weight, n, e, t in results:
-                out.write(f"TEST #{idx}-{fname}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tpath={path_str}\n\tRUNTIME:{t:.4f} seconds\n\n")
+                out.write(f"TEST #{idx}-{fname}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tpath={path_str}\n\tRUNTIME:{t:.8f} seconds\n\n")
 
         if results:
             print(f"Wrote {len(results)} results to {output_file}")
