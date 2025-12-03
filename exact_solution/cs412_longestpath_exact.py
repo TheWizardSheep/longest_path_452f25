@@ -1,12 +1,25 @@
 from collections import defaultdict
 import itertools
-import sys
+import argparse
 
 graph = None
 edgeList = None
 
-# Switch to true to see the program actively testing each edge
-debug = False
+parser = argparse.ArgumentParser(description="Find the longest path in a graph")
+parser.add_argument(
+    "--debug",
+    action="store_true",
+    help="Enable debug mode"
+)
+parser.add_argument(
+    "--file",
+    type=str,
+    help="Input file path (if omitted, read from STDIN)"
+)
+
+args = parser.parse_args()
+input_via_file = args.file
+debug = args.debug
 
 
 # Read in input and build graph adjacency list
@@ -15,20 +28,23 @@ def parse_graph():
     global edgeList
     graph = defaultdict(dict)
     edgeList = []
-    numV, numE = [int(num) for num in input().split()]
-    for _ in range(numE):
-        u, v, w = input().split()
-        edgeList.append((u, v))
-        graph[u][v] = int(w)
-
+    
     # Read in input as a file instead of STDIN
-    # with open(sys.argv[1], "r") as file:
-    #     numV, numE = [int(num) for num in next(file).split()]
-    #     for line in file:
-    #         u, v, w = line.split()
-    #         edgeList.append((u, v))
-    #         graph[u][v] = int(w)
-    #     file.close()
+    if (input_via_file is not None):
+        with open(input_via_file, "r") as file:
+            numV, numE = [int(num) for num in next(file).split()]
+            for line in file:
+                u, v, w = line.split()
+                edgeList.append((u, v))
+                graph[u][v] = int(w)
+    
+    # Read in input as STDIN instead of as a file
+    else:
+        numV, numE = [int(num) for num in input().split()]
+        for _ in range(numE):
+            u, v, w = input().split()
+            edgeList.append((u, v))
+            graph[u][v] = int(w)
 
 
 # Actual algorithm here
