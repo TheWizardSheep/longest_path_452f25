@@ -1,29 +1,22 @@
-from collections import defaultdict
-
 import sys
 file = sys.argv[1]
 
-with open(file) as f:
-    n, m = map(int, f.readline().split())
 
-    #  input graph
-    adj = defaultdict(set)
-    for _ in range(m):
-        u, v, w = f.readline().split()
-        adj[u].add(v)
-        adj[v].add
+def reduce_input():
+    with open(file) as f, open("../input.txt", "w") as i:
+        n, m = map(int, f.readline().split())
+
+        # 2m to account for the bidirectional edges we are adding
+        i.write(f"{n} {2*m}\n")
+
+        #  give each edge in the unweighted graph an edge weight of 1
+        for _ in range(m):
+            u, v, _ = f.readline().split()
+            i.write(f"{u} {v} 1\n")
+            i.write(f"{v} {u} 1\n")
+
+    return "input.txt"
 
 
-def reduce_LPP(adj, k):
-    W = dict()
-    for u in adj.keys():
-        W[u] = {}
-        for v in adj.keys():
-            if u == v:
-                W[u][v] = 0
-            elif v in adj[u]:
-                W[u][v] = 0
-            else:
-                W[u][v] = 1
-    K = len(adj.keys()) - k
-    return W, K
+if __name__ == "__main__":
+    print(reduce_input())
