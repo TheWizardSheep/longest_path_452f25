@@ -1,4 +1,4 @@
-6 12
+8 20
 A B 1
 B A 1
 B C 1
@@ -9,5 +9,13 @@ D E 1
 E D 1
 E F 1
 F E 1
-A F 1
-F A 1
+F G 1
+G F 1
+G H 1
+H G 1
+A D 1
+D A 1
+C F 1
+F C 1
+B G 1
+G B 1

@@ -1,4 +1,6 @@
 O running time:
+    - running time for the reduction
+    - running time for LPP to run and get the answer
 
 
 calling the program:

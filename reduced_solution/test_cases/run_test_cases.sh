@@ -10,7 +10,6 @@ for file in ./*.txt; do
         echo "Testing: $file"
         start=$(date +%s.%N)
 
-
         # reduce to LPP input
         NEW_INPUT=$($PYTHON_INTERPRETER $REDUCTION "$file")
 
@@ -34,7 +33,7 @@ for file in ./*.txt; do
         fi
         end=$(date +%s.%N)
         elapsed=$(echo "$end - $start" | bc)
-
+        echo Time: $elapsed
     fi
 done
 
