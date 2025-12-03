@@ -8,3 +8,6 @@ The code below is a demonstration of how to run the program. Graphs are expected
 `python approx_solution.py [-t <TIME:int>] [-p <THREAD_CT:int>] [-v|--verbose]`
 If the program is interrupted by SIGINT, it will promptly terminate and output the best answer seen at that point.
 Otherwise, it will terminate after the input time.
+
+Running all of the test cases in the testing directory is a simple as running `test_cases/run_test_cases.sh`. The runner
+forwards command-line-args to the solver, as well as SIGINTs to allow for anytime behavior for select tests.
