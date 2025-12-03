@@ -8,19 +8,28 @@ edgeList = None
 # Switch to true to see the program actively testing each edge
 debug = False
 
+
 # Read in input and build graph adjacency list
 def parse_graph():
     global graph
     global edgeList
     graph = defaultdict(dict)
-    edgeList = [] 
-    with open(sys.argv[1], "r") as file:
-        numV, numE = [int(num) for num in next(file).split()]
-        for line in file:
-            u, v, w = line.split()
-            edgeList.append((u, v))
-            graph[u][v] = int(w)
-        file.close()
+    edgeList = []
+    numV, numE = [int(num) for num in input().split()]
+    for _ in range(numE):
+        u, v, w = input().split()
+        edgeList.append((u, v))
+        graph[u][v] = int(w)
+
+    # Read in input as a file instead of STDIN
+    # with open(sys.argv[1], "r") as file:
+    #     numV, numE = [int(num) for num in next(file).split()]
+    #     for line in file:
+    #         u, v, w = line.split()
+    #         edgeList.append((u, v))
+    #         graph[u][v] = int(w)
+    #     file.close()
+
 
 # Actual algorithm here
 def find_path():
@@ -40,10 +49,10 @@ def find_path():
         still_legal = True
         # check for legality
         for u, v in combo:
-            if (debug):
+            if debug:
                 print(f"testing ({u}, {v})")
             # First edge is always legal
-            if (last_v is None):
+            if last_v is None:
                 combo_weight += graph[u][v]
                 vertices_seen.add(u)
                 vertices_seen.add(v)
@@ -53,7 +62,7 @@ def find_path():
             elif (u != last_v) or (v in vertices_seen):
                 still_legal = False
                 break
-            
+
             else:
                 combo_weight += graph[u][v]
                 vertices_seen.add(v)
@@ -64,25 +73,25 @@ def find_path():
             biggest[0] = combo_weight
             biggest[1] = combo
 
-    return biggest  
+    return biggest
 
 
 # Parse the results and format an output
 def generate_output(weight, path):
-    if (debug):
+    if debug:
         print("-------------\nOUTPUT:")
+
     print(weight)
-    
     if path == None:
-        print("No path found!")
+        if debug:
+            print("No path found!")
+        else:
+            print()
     else:
         vertices = [path[0][0]]
         for _, v in path:
-           vertices.append(v)
-        
-        for node in vertices:
-            print(f"{node} ", end="")
-        print()
+            vertices.append(v)
+        print(" ".join(vertices))
 
 
 def main():
