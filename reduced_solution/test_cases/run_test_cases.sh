@@ -8,7 +8,7 @@ echo Beginning test:
 
 for file in ./*.txt; do
     if [ -f "$file" ]; then
-        echo "Testing: $file"
+        echo "Testing: $file" >> "$RESULTS"
         START=$(date +%s.%N)
 
         # reduce to LPP input
@@ -40,4 +40,4 @@ for file in ./*.txt; do
 done
 
 wait
-echo "All jobs finished." # change this to write to outfile
+echo "All jobs finished."

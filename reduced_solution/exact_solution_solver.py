@@ -47,9 +47,9 @@ def find_path():
     # longest path weight, longest path
     biggest = [0, None]
 
-    for path_length in range(2, len(graph)):
+    for path_length in range(2, len(graph) + 1):
         # print(graph)
-        for combo in itertools.permutations(graph.keys(), path_length + 1):
+        for combo in itertools.permutations(graph.keys(), path_length):
             # print(path_length,combo)
             # Maintain a set of visited vertices to track cycles
             vertices_seen = set()
