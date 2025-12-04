@@ -10,6 +10,7 @@ edgeList = []
 deadline = float("inf")   
 file = None               
 
+
 def parse_graph():
     global graph, edgeList
 
@@ -111,11 +112,55 @@ def build_graph():
 
     return mst
 
+
+def build_max_acyclic_subgraph():
+    sorted_edges = sorted(edgeList, key=lambda x: x[2], reverse=True)
+    dag = defaultdict(dict)
+
+    def find_cycle(start, target):
+        stack = [(target, [target])]
+        visited = set()
+
+        while stack:
+            node, path = stack.pop()
+            if node == start:
+                edges = []
+                for i in range(len(path)-1):
+                    u, v = path[i], path[i+1]
+                    edges.append((u, v, dag[u][v]))
+                return edges
+
+            if node in visited:
+                continue
+            visited.add(node)
+
+            for nxt in dag.get(node, {}):
+                stack.append((nxt, path + [nxt]))
+
+        return None
+    for u, v, w in sorted_edges:
+        if u == v:
+            continue
+
+        cycle_edges = find_cycle(u, v)
+        if not cycle_edges:
+            dag[u][v] = w
+            continue
+
+        weakest = min(cycle_edges, key=lambda e: e[2])  # (u, v, w)
+        if weakest[2] >= w:
+            continue
+        wu, wv, ww = weakest
+        del dag[wu][wv]
+        dag[u][v] = w
+
+    return dag
+
 def approximation():
     numV, numE = parse_graph()
 
     # Build Bellman–Ford graph
-    mst = build_graph()
+    mst = build_max_acyclic_subgraph()
 
     # Collect vertices again
     vertices = set()
@@ -124,27 +169,46 @@ def approximation():
         vertices.add(v)
     vertices = list(vertices)
 
-    best_so_far = (-float("inf"), [])
+    def beam(mst, vertices, deadline, beam_width=15):
+        best_weight = -float("inf")
+        best_path = []
 
-    def dfs(curr, curr_path, curr_weight):
-        nonlocal best_so_far
-        if time.time() > deadline:
-            return  # Anytime: just bail and keep best_so_far
+        for start in vertices:
+            if time.time() > deadline:
+                break
 
-        if curr_weight > best_so_far[0]:
-            best_so_far = (curr_weight, curr_path)
+            beam = [(0, [start])]
 
-        for neighbor, w in mst.get(curr, {}).items():
-            if neighbor not in curr_path:
-                dfs(neighbor, curr_path + [neighbor], curr_weight + w)
+            while beam:
+                if time.time() > deadline:
+                    break
 
-    # Start DFS from every vertex
-    for node in vertices:
-        if time.time() > deadline:
-            break
-        dfs(node, [node], 0)
+                new_beam = []
 
-    return best_so_far[0], best_so_far[1], numV, numE
+                for weight, path in beam:
+                    u = path[-1]
+
+                    # Expand neighbors
+                    for v, w in mst.get(u, {}).items():
+                        if v not in path:  # avoid cycles
+                            new_w = weight + w
+                            new_path = path + [v]
+                            new_beam.append((new_w, new_path))
+
+                            # Track global best
+                            if new_w > best_weight:
+                                best_weight = new_w
+                                best_path = new_path
+
+                # Keep only best beam_width paths
+                new_beam.sort(reverse=True, key=lambda x: x[0])
+                beam = new_beam[:beam_width]
+
+        return best_weight, best_path
+
+    weight, path = beam(mst, vertices, deadline)
+
+    return weight, path, numV, numE
 
 
 if __name__ == "__main__":
@@ -168,23 +232,12 @@ if __name__ == "__main__":
                     continue
                 file = file_path
                 start = time.time()
-                print(f"Processing TEST #{idx}-{filename}...")
                 weight, path, n, e = approximation()
                 results.append((idx, os.path.basename(file_path), " ".join(path) if path else "", weight, n, e, time.time() - start))  
                 output_file = os.path.join(base_dir,"test_cases","output", "output.txt")
         # write all results to output.txt
-        with open(output_file, "w") as out:
-            for idx, fname, path_str, weight, n, e, t in results:
-                out.write(f"TEST #{idx}-{fname}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tpath={path_str}\n\tRUNTIME:{t:.8f} seconds\n\n")
-
-        if results:
-            print(f"Wrote {len(results)} results to {output_file}")
-        else:
-            print("No test files found; no output written.")
-
+        for idx, fname, path_str, weight, n, e, t in results:
+            print(f"{weight}\n{' '.join(path) if path else ''}")
     else:
-        print("Running from stdin!")
-        output_file = os.path.join(base_dir,"test_cases","output", "output.txt")
-        with open(output_file, "w") as out:
-            weight, path, n, e = approximation()
-            out.write(f"V={n}\nE={e}\nweight={weight}\npath={' '.join(path) if path else ''}\n")
+        weight, path, n, e = approximation()
+        print(f"{weight}\n{' '.join(path) if path else ''}")

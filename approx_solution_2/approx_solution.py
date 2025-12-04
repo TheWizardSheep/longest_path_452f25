@@ -59,7 +59,7 @@ def run_approximation(v, adj, t):
             best_path = path.copy()
         
 
-    return longest, "->".join(best_path)
+    return longest, " ".join(best_path)
 
 
 def worker(start_time, t, adj, best_result, verbose=False):

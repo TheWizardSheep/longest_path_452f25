@@ -19,11 +19,11 @@ Randomization process overview:
 
 # Constants -- I think runtime is more heavily affected by E
 NUM_CASES = 50
-MIN_VERTICES = 5
-MAX_VERTICES = 12
+MIN_VERTICES = 8
+MAX_VERTICES = 16
 
-MIN_EDGES = int(1.2 * MIN_VERTICES)
-MAX_EDGES = int(1.1 * MAX_VERTICES)
+MIN_EDGES = int(1.5 * MIN_VERTICES)
+MAX_EDGES = int(1.5 * MAX_VERTICES)
 
 
 MAX_WEIGHT = 20
