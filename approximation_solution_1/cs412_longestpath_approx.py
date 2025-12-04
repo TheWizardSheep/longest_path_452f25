@@ -168,20 +168,12 @@ if __name__ == "__main__":
                     continue
                 file = file_path
                 start = time.time()
-                print(f"Processing TEST #{idx}-{filename}...")
                 weight, path, n, e = approximation()
                 results.append((idx, os.path.basename(file_path), " ".join(path) if path else "", weight, n, e, time.time() - start))  
                 output_file = os.path.join(base_dir,"test_cases","output", "output.txt")
         # write all results to output.txt
-        with open(sys.stdout.fileno(), "w") as out:
-            for idx, fname, path_str, weight, n, e, t in results:
-                print(f"TEST #{idx}-{fname}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tpath={path_str}\n\tRUNTIME:{t:.8f} seconds\n\n")
-
-        if results:
-            print(f"Wrote {len(results)} results to {output_file}")
-        else:
-            print("No test files found; no output written.")
-
+        for idx, fname, path_str, weight, n, e, t in results:
+            print(f"TEST #{idx}-{fname}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tpath={path_str}\n\tRUNTIME:{t:.8f} seconds\n\n")
     else:
         weight, path, n, e = approximation()
         print(f"V={n}\nE={e}\nweight={weight}\npath={' '.join(path) if path else ''}\n")
