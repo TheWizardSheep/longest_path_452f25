@@ -1,21 +1,84 @@
-Running longest-path → TSP reduction tests
-===========================================
-Processing test file: ./t1.txt
--------------------------------------------
-Input:
-4 3
-A B 5
-A C 2
-C D 1
-
-Output:
-
-TSP weight dictionary (W):
-A {'A': 0, 'B': 0, 'C': 0, 'D': 1}
-B {'A': 1, 'B': 0, 'C': 1, 'D': 1}
-C {'A': 1, 'B': 1, 'C': 0, 'D': 0}
-D {'A': 1, 'B': 1, 'C': 1, 'D': 0}
-Threshold K: 2
-
-===========================================
-
+HAM FOUND
+Time: .040573000
+NO HAM FINAL_N=0, expected 3
+Time: .031362000
+HAM FOUND
+Time: .030473000
+NO HAM FINAL_N=2, expected 4
+Time: .030986000
+HAM FOUND
+Time: .031559000
+NO HAM FINAL_N=0, expected 5
+Time: .031603000
+HAM FOUND
+Time: .033246000
+NO HAM FINAL_N=0, expected 2
+Time: .031881000
+HAM FOUND
+Time: .041492000
+NO HAM FINAL_N=0, expected 6
+Time: .038778000
+HAM FOUND
+Time: .086352000
+NO HAM FINAL_N=2, expected 7
+Time: .036928000
+NO HAM FINAL_N=0, expected 1
+Time: .036884000
+NO HAM FINAL_N=0, expected 1
+Time: .031654000
+HAM FOUND
+Time: .491234000
+NO HAM FINAL_N=3, expected 8
+Time: .469004000
+HAM FOUND
+Time: 4.805430000
+NO HAM FINAL_N=0, expected 9
+Time: .033531000
+HAM FOUND
+Time: .032644000
+NO HAM FINAL_N=0, expected 3
+Time: .030038000
+HAM FOUND
+Time: .032286000
+NO HAM FINAL_N=0, expected 4
+Time: .030148000
+HAM FOUND
+Time: 51.443451000
+NO HAM FINAL_N=2, expected 10
+Time: .491917000
+HAM FOUND
+Time: .031496000
+NO HAM FINAL_N=0, expected 3
+Time: .031080000
+HAM FOUND
+Time: .029602000
+NO HAM FINAL_N=2, expected 4
+Time: .030091000
+HAM FOUND
+Time: .032021000
+NO HAM FINAL_N=2, expected 5
+Time: .031910000
+HAM FOUND
+Time: .036779000
+NO HAM FINAL_N=2, expected 6
+Time: .037343000
+HAM FOUND
+Time: .091355000
+NO HAM FINAL_N=2, expected 7
+Time: .043129000
+HAM FOUND
+Time: .031063000
+NO HAM FINAL_N=0, expected 2
+Time: .031145000
+HAM FOUND
+Time: 4.732070000
+NO HAM FINAL_N=2, expected 9
+Time: .038555000
+HAM FOUND
+Time: .506104000
+NO HAM FINAL_N=3, expected 8
+Time: .481308000
+NO HAM FINAL_N=0, expected 1
+Time: .030795000
+NO HAM FINAL_N=0, expected 1
+Time: .033145000

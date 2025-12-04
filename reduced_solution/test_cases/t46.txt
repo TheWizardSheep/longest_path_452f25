@@ -1,8 +1,6 @@
-9 6
+12 5
 A B 1
-B C 1
 C D 1
 E F 1
 G H 1
-I I 0
-
+I J 1

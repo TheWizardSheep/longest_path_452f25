@@ -1,14 +1,15 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PYTHON_INTERPRETER="python3"
 REDUCTION="../reduction_sol.py"
-EXACT_SOL="../../exact_solution/cs412_longestpath_exact.py"
+EXACT_SOL="../exact_solution_solver.py"
+RESULTS="$SCRIPT_DIR/../results.txt"
 
 echo Beginning test:
 
 for file in ./*.txt; do
     if [ -f "$file" ]; then
         echo "Testing: $file"
-        start=$(date +%s.%N)
+        START=$(date +%s.%N)
 
         # reduce to LPP input
         NEW_INPUT=$($PYTHON_INTERPRETER $REDUCTION "$file")
@@ -27,13 +28,14 @@ for file in ./*.txt; do
 
         # was n - 1 verticies visited
         if [ "$FINAL_N" -eq "$EXPECTED" ]; then
-            echo "HAM FOUND"
+            echo "HAM FOUND" >> "$RESULTS"
         else
-            echo "NO HAM FINAL_N=$FINAL_N, expected $EXPECTED"
+            echo "NO HAM FINAL_N=$FINAL_N, expected $EXPECTED" >> "$RESULTS"
         fi
-        end=$(date +%s.%N)
-        elapsed=$(echo "$end - $start" | bc)
-        echo Time: $elapsed
+
+        END=$(date +%s.%N)
+        ELAPSED=$(echo "$END - $START" | bc)
+        echo Time: $ELAPSED >> "$RESULTS"
     fi
 done
 
