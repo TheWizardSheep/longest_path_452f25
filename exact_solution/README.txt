@@ -2,23 +2,23 @@
 are studying a graph problem, express the bounds in terms of V and
 E.
 
-Since the algorithm is dominated by various permutations of edges,
-the runtime of the algorithm will be almost entirely in terms of E.
+Since the algorithm is dominated by various permutations of vertices,
+the runtime of the algorithm will be almost entirely in terms of V.
 
-Build the graph from input (graph size dependent on number of edges):    O(E).
-Permute every edge combination of every length:    O(E!)
-    -Check each edge combination for legality (could be up to E long):    O(E)
+Build the graph from input:    O(E).
+Permute every vertex combination of every length:    O(V!)
+    -Check each vertex combination for legality (could be up to V long):    O(V)
     -Check if the combination is the biggest so far:    O(1)
-Traverse the resulting path (could be up to E long):    O(E)
+Traverse the resulting path (could be up to V long):    O(V)
 Result:
-    -The permutation and legality check combine for O(E * E!)
+    -The permutation and legality check combine for O(V * V!)
     -The permutation and legality check dominate the runtime.
-    -Total runtime: O(2E + E * E!).
-    -The algorithm’s runtime simplifies to O(E * E!)
+    -The algorithm’s runtime simplifies to O(V * V!)
 
 
 
 – Examples of calling the program:
+(The examples' command line calls assume you are in the longest_path_452f25 directory)
 
 - If you would like to input the data via an input file, use --file to provide the file path.
 python exact_solution/cs412_longestpath_exact.py --file exact_solution/test_22.txt
