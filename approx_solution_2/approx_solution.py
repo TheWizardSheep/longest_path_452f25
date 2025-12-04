@@ -15,8 +15,11 @@ Logic:
 * might as well keep going until no path can be found, if we track cur_longest at each step then it is fine to do so
 """
 
+TIME_BUFFER = .2 # estimated number of seconds that the program requires for a complete shutdown
 
-def run_approximation(v, adj):
+start_time = time.time()
+
+def run_approximation(v, adj, t):
     longest = pathlen = 0
     path = [v]
     best_path = []
@@ -25,6 +28,11 @@ def run_approximation(v, adj):
         # find the frontier and assign arbitrary odds based on their weight
         frontier = []
         odds = []
+        
+        # time check
+        if start_time + t <= time.time() + TIME_BUFFER:
+            return longest, "->".join(best_path)
+        
         for dv, dw in adj[v]:
             if not dv in visited:
                 frontier.append((dv, dw))
@@ -51,18 +59,17 @@ def run_approximation(v, adj):
             best_path = path.copy()
         
 
-    return longest, "->".join(best_path)
+    return longest, " ".join(best_path)
 
 
 def worker(start_time, t, adj, best_result, verbose=False):
     try:
         import random, time
         while True:
-            cur_time = time.time()
-            if start_time + t <= cur_time:
-                break
+            if start_time + t <= time.time() + TIME_BUFFER:
+                return
             v = random.choice(list(adj.keys()))
-            dlen, dpath = run_approximation(v, adj)
+            dlen, dpath = run_approximation(v, adj, t)
             if verbose and dlen > 0:
                 print(f"{dlen} : {dpath}")
             # update shared best result safely

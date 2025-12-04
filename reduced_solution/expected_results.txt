@@ -1,0 +1,50 @@
+t01.txt: HAM
+t02.txt: NO HAM
+t03.txt: HAM
+t04.txt: NO HAM
+t05.txt: HAM
+t06.txt: NO HAM
+t07.txt: HAM
+t08.txt: NO HAM
+t09.txt: HAM
+t10.txt: NO HAM
+t11.txt: HAM
+t12.txt: NO HAM
+t13.txt: HAM
+t14.txt: NO HAM
+t15.txt: HAM
+t16.txt: NO HAM
+t17.txt: HAM
+t18.txt: NO HAM
+t19.txt: HAM
+t20.txt: NO HAM
+t21.txt: HAM
+t22.txt: NO HAM
+t23.txt: HAM
+t24.txt: NO HAM
+t25.txt: HAM
+t26.txt: NO HAM
+t27.txt: HAM
+t28.txt: NO HAM
+t29.txt: HAM
+t30.txt: NO HAM
+t31.txt: HAM
+t32.txt: NO HAM
+t33.txt: HAM
+t34.txt: NO HAM
+t35.txt: HAM
+t36.txt: NO HAM
+t37.txt: HAM
+t38.txt: NO HAM
+t39.txt: HAM
+t40.txt: NO HAM
+t41.txt: HAM
+t42.txt: NO HAM
+t43.txt: HAM
+t44.txt: NO HAM
+t45.txt: HAM
+t46.txt: NO HAM
+t47.txt: HAM
+t48.txt: HAM
+t49.txt: NO HAM
+t50.txt: HAM
