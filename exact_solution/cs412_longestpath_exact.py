@@ -56,22 +56,32 @@ def find_path():
             # Maintain a set of visited vertices to track cycles
             vertices_seen = set()
             combo_weight = 0
-            still_legal = True
+            # last_v = None
+            
             # check for legality
+            still_legal = True
             this_path = []
             for u, v in pairwise(combo):
                 if debug:
                     print(f"testing ({u}, {v})")
 
+                # if not (last_v is None):
+                #     if u != last_v:
+                #         still_legal = False
+                #         break
+
+                # Check for cycles
                 if v in vertices_seen:
                     still_legal = False
                     break
 
+                # Check for legality
                 if v in graph[u]:
                     combo_weight += graph[u][v]
                     vertices_seen.add(u)
-                    vertices_seen.add(v)
+                    # vertices_seen.add(v)
                     this_path.append((u, v))
+                    # last_v = v
 
                 else:
                     still_legal = False
