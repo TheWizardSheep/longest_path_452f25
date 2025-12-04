@@ -173,7 +173,7 @@ if __name__ == "__main__":
                 output_file = os.path.join(base_dir,"test_cases","output", "output.txt")
         # write all results to output.txt
         for idx, fname, path_str, weight, n, e, t in results:
-            print(f"TEST #{idx}-{fname}:\n\tV={n}\n\tE={e}\n\tweight={weight}\n\tpath={path_str}\n\tRUNTIME:{t:.8f} seconds\n\n")
+            print(f"{weight}\n{' '.join(path) if path else ''}")
     else:
         weight, path, n, e = approximation()
-        print(f"V={n}\nE={e}\nweight={weight}\npath={' '.join(path) if path else ''}\n")
+        print(f"{weight}\n{' '.join(path) if path else ''}")
