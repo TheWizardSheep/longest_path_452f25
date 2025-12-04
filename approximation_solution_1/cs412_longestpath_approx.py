@@ -126,25 +126,49 @@ def approximation():
 
     best_so_far = (-float("inf"), [])
 
-    def dfs(curr, curr_path, curr_weight):
-        nonlocal best_so_far
-        if time.time() > deadline:
-            return  # Anytime: just bail and keep best_so_far
+    def beam(mst, vertices, deadline, beam_width=15):
 
-        if curr_weight > best_so_far[0]:
-            best_so_far = (curr_weight, curr_path)
+        best_weight = -float("inf")
+        best_path = []
 
-        for neighbor, w in mst.get(curr, {}).items():
-            if neighbor not in curr_path:
-                dfs(neighbor, curr_path + [neighbor], curr_weight + w)
+        for start in vertices:
+            if time.time() > deadline:
+                break
 
-    # Start DFS from every vertex
-    for node in vertices:
-        if time.time() > deadline:
-            break
-        dfs(node, [node], 0)
+            # Each element in the beam is: (weight, path_list)
+            beam = [(0, [start])]
 
-    return best_so_far[0], best_so_far[1], numV, numE
+            while beam:
+                if time.time() > deadline:
+                    break
+
+                new_beam = []
+
+                for weight, path in beam:
+                    u = path[-1]
+
+                    # Expand neighbors
+                    for v, w in mst.get(u, {}).items():
+                        if v not in path:  # avoid cycles
+                            new_w = weight + w
+                            new_path = path + [v]
+                            new_beam.append((new_w, new_path))
+
+                            # Track global best
+                            if new_w > best_weight:
+                                best_weight = new_w
+                                best_path = new_path
+
+                # Keep only best beam_width paths
+                new_beam.sort(reverse=True, key=lambda x: x[0])
+                beam = new_beam[:beam_width]
+
+        return best_weight, best_path
+
+    # Start beam search from every vertex
+    weight, path = beam(mst, vertices, deadline)
+
+    return weight, path, numV, numE
 
 
 if __name__ == "__main__":
