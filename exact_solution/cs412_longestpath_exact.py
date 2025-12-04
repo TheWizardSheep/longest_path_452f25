@@ -26,7 +26,7 @@ def parse_graph():
             numV, numE = [int(num) for num in next(file).split()]
             for line in file:
                 u, v, w = line.split()
-                graph[u][v] = int(w)
+                graph[u][v] = max(graph[u].get(v, -float("inf")), int(w))
                 if v not in graph:
                     graph[v] = dict()
 
@@ -35,7 +35,7 @@ def parse_graph():
         numV, numE = [int(num) for num in input().split()]
         for _ in range(numE):
             u, v, w = input().split()
-            graph[u][v] = int(w)
+            graph[u][v] = max(graph[u].get(v, -float("inf")), int(w))
             if v not in graph:
                 graph[v] = dict()
 
@@ -56,7 +56,6 @@ def find_path():
             # Maintain a set of visited vertices to track cycles
             vertices_seen = set()
             combo_weight = 0
-            # last_v = None
             
             # check for legality
             still_legal = True
@@ -64,11 +63,6 @@ def find_path():
             for u, v in pairwise(combo):
                 if debug:
                     print(f"testing ({u}, {v})")
-
-                # if not (last_v is None):
-                #     if u != last_v:
-                #         still_legal = False
-                #         break
 
                 # Check for cycles
                 if v in vertices_seen:
@@ -81,7 +75,6 @@ def find_path():
                     vertices_seen.add(u)
                     # vertices_seen.add(v)
                     this_path.append((u, v))
-                    # last_v = v
 
                 else:
                     still_legal = False
