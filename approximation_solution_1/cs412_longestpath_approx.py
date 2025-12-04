@@ -111,11 +111,54 @@ def build_graph():
 
     return mst
 
+def build_max_acyclic_subgraph():
+    """
+    Build a Maximum Acyclic Subgraph (MAS) by taking edges in 
+    descending weight order and adding them if they do NOT create a cycle.
+
+    Returns:
+        dag : adjacency dict {u: {v: weight}}
+    """
+
+    # Sort edges by descending weight
+    sorted_edges = sorted(edgeList, key=lambda x: x[2], reverse=True)
+
+    dag = defaultdict(dict)
+
+    # Track visited for cycle detection
+    # Cycle detection in directed graph via DFS
+    def creates_cycle(src, dst):
+        """Return True if adding src -> dst creates a cycle."""
+        stack = [dst]
+        visited = set()
+
+        while stack:
+            node = stack.pop()
+            if node == src:
+                return True
+            if node in visited:
+                continue
+            visited.add(node)
+            for nxt in dag.get(node, {}):
+                stack.append(nxt)
+
+        return False
+
+    # Build the DAG
+    for u, v, w in sorted_edges:
+        if u == v:
+            continue  # ignore self-loops
+        # If adding u->v does NOT create a cycle, keep it
+        if not creates_cycle(u, v):
+            dag[u][v] = w
+
+    return dag
+
 def approximation():
     numV, numE = parse_graph()
 
     # Build Bellman–Ford graph
-    mst = build_graph()
+    mst = build_max_acyclic_subgraph()
 
     # Collect vertices again
     vertices = set()
