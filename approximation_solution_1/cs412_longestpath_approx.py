@@ -10,6 +10,7 @@ edgeList = []
 deadline = float("inf")   
 file = None               
 
+
 def parse_graph():
     global graph, edgeList
 
@@ -111,46 +112,47 @@ def build_graph():
 
     return mst
 
+
 def build_max_acyclic_subgraph():
-    """
-    Build a Maximum Acyclic Subgraph (MAS) by taking edges in 
-    descending weight order and adding them if they do NOT create a cycle.
-
-    Returns:
-        dag : adjacency dict {u: {v: weight}}
-    """
-
-    # Sort edges by descending weight
     sorted_edges = sorted(edgeList, key=lambda x: x[2], reverse=True)
-
     dag = defaultdict(dict)
 
-    # Track visited for cycle detection
-    # Cycle detection in directed graph via DFS
-    def creates_cycle(src, dst):
-        """Return True if adding src -> dst creates a cycle."""
-        stack = [dst]
+    def find_cycle(start, target):
+        stack = [(target, [target])]
         visited = set()
 
         while stack:
-            node = stack.pop()
-            if node == src:
-                return True
+            node, path = stack.pop()
+            if node == start:
+                edges = []
+                for i in range(len(path)-1):
+                    u, v = path[i], path[i+1]
+                    edges.append((u, v, dag[u][v]))
+                return edges
+
             if node in visited:
                 continue
             visited.add(node)
+
             for nxt in dag.get(node, {}):
-                stack.append(nxt)
+                stack.append((nxt, path + [nxt]))
 
-        return False
-
-    # Build the DAG
+        return None
     for u, v, w in sorted_edges:
         if u == v:
-            continue  # ignore self-loops
-        # If adding u->v does NOT create a cycle, keep it
-        if not creates_cycle(u, v):
+            continue
+
+        cycle_edges = find_cycle(u, v)
+        if not cycle_edges:
             dag[u][v] = w
+            continue
+
+        weakest = min(cycle_edges, key=lambda e: e[2])  # (u, v, w)
+        if weakest[2] >= w:
+            continue
+        wu, wv, ww = weakest
+        del dag[wu][wv]
+        dag[u][v] = w
 
     return dag
 
@@ -167,10 +169,7 @@ def approximation():
         vertices.add(v)
     vertices = list(vertices)
 
-    best_so_far = (-float("inf"), [])
-
     def beam(mst, vertices, deadline, beam_width=15):
-
         best_weight = -float("inf")
         best_path = []
 
@@ -178,7 +177,6 @@ def approximation():
             if time.time() > deadline:
                 break
 
-            # Each element in the beam is: (weight, path_list)
             beam = [(0, [start])]
 
             while beam:
@@ -208,7 +206,6 @@ def approximation():
 
         return best_weight, best_path
 
-    # Start beam search from every vertex
     weight, path = beam(mst, vertices, deadline)
 
     return weight, path, numV, numE
