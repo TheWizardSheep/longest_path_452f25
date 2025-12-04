@@ -1,0 +1,300 @@
+=============================================
+File: test_0.txt
+Elapsed: 0.920318 seconds
+Output:
+Time limit reached! Longest path found: 67 Path: 10 2 3 9 5
+
+=============================================
+File: test_1.txt
+Elapsed: 0.924096 seconds
+Output:
+Time limit reached! Longest path found: 4 Path: 10 6
+
+=============================================
+File: test_10.txt
+Elapsed: 0.914297 seconds
+Output:
+Time limit reached! Longest path found: 48 Path: 6 1 3 5 2 4
+
+=============================================
+File: test_11.txt
+Elapsed: 0.916932 seconds
+Output:
+Time limit reached! Longest path found: 14 Path: 7 5
+
+=============================================
+File: test_12.txt
+Elapsed: 0.926027 seconds
+Output:
+Time limit reached! Longest path found: 26 Path: 8 10 9 6
+
+=============================================
+File: test_13.txt
+Elapsed: 0.922132 seconds
+Output:
+Time limit reached! Longest path found: 38 Path: 3 4 1 7
+
+=============================================
+File: test_14.txt
+Elapsed: 0.917628 seconds
+Output:
+Time limit reached! Longest path found: 13 Path: 2 3 4
+
+=============================================
+File: test_15.txt
+Elapsed: 0.918614 seconds
+Output:
+Time limit reached! Longest path found: 40 Path: 4 2 5 3
+
+=============================================
+File: test_16.txt
+Elapsed: 0.922891 seconds
+Output:
+Time limit reached! Longest path found: 25 Path: 1 9 2
+
+=============================================
+File: test_17.txt
+Elapsed: 0.91741 seconds
+Output:
+Time limit reached! Longest path found: 45 Path: 2 6 4 1
+
+=============================================
+File: test_18.txt
+Elapsed: 0.919724 seconds
+Output:
+Time limit reached! Longest path found: 44 Path: 1 3 4 5
+
+=============================================
+File: test_19.txt
+Elapsed: 0.921673 seconds
+Output:
+Time limit reached! Longest path found: 41 Path: 1 4 3 2 5
+
+=============================================
+File: test_2.txt
+Elapsed: 0.925344 seconds
+Output:
+Time limit reached! Longest path found: 54 Path: 5 6 3 2 1
+
+=============================================
+File: test_20.txt
+Elapsed: 0.927477 seconds
+Output:
+Time limit reached! Longest path found: 20 Path: 7 4
+
+=============================================
+File: test_21.txt
+Elapsed: 0.921745 seconds
+Output:
+Time limit reached! Longest path found: 49 Path: 2 5 3 6 4 7
+
+=============================================
+File: test_22.txt
+Elapsed: 0.932928 seconds
+Output:
+Time limit reached! Longest path found: 16 Path: 3 5
+
+=============================================
+File: test_23.txt
+Elapsed: 0.932009 seconds
+Output:
+Time limit reached! Longest path found: 17 Path: 3 6 7
+
+=============================================
+File: test_24.txt
+Elapsed: 0.919553 seconds
+Output:
+Time limit reached! Longest path found: 14 Path: 1 2
+
+=============================================
+File: test_25.txt
+Elapsed: 0.935731 seconds
+Output:
+Time limit reached! Longest path found: 30 Path: 5 10 2
+
+=============================================
+File: test_26.txt
+Elapsed: 0.932306 seconds
+Output:
+Time limit reached! Longest path found: 16 Path: 1 4
+
+=============================================
+File: test_27.txt
+Elapsed: 0.920294 seconds
+Output:
+Time limit reached! Longest path found: 26 Path: 1 2 3
+
+=============================================
+File: test_28.txt
+Elapsed: 0.938954 seconds
+Output:
+Time limit reached! Longest path found: 20 Path: 7 6 4
+
+=============================================
+File: test_29.txt
+Elapsed: 0.933578 seconds
+Output:
+Time limit reached! Longest path found: 18 Path: 6 7 8
+
+=============================================
+File: test_3.txt
+Elapsed: 0.927145 seconds
+Output:
+Time limit reached! Longest path found: 17 Path: 1 2 3
+
+=============================================
+File: test_30.txt
+Elapsed: 0.923032 seconds
+Output:
+Time limit reached! Longest path found: 29 Path: 3 6 4 1
+
+=============================================
+File: test_31.txt
+Elapsed: 0.916238 seconds
+Output:
+Time limit reached! Longest path found: 31 Path: 4 10 3
+
+=============================================
+File: test_32.txt
+Elapsed: 0.918657 seconds
+Output:
+Time limit reached! Longest path found: 19 Path: 12 7 10
+
+=============================================
+File: test_33.txt
+Elapsed: 0.918232 seconds
+Output:
+Time limit reached! Longest path found: 39 Path: 6 7 9 5
+
+=============================================
+File: test_34.txt
+Elapsed: 0.918436 seconds
+Output:
+Time limit reached! Longest path found: 19 Path: 3 4 6
+
+=============================================
+File: test_35.txt
+Elapsed: 0.920223 seconds
+Output:
+Time limit reached! Longest path found: 30 Path: 8 9 1 4 7 6
+
+=============================================
+File: test_36.txt
+Elapsed: 0.934657 seconds
+Output:
+Time limit reached! Longest path found: 31 Path: 2 6 3 1
+
+=============================================
+File: test_37.txt
+Elapsed: 0.920261 seconds
+Output:
+Time limit reached! Longest path found: 14 Path: 1 2
+
+=============================================
+File: test_38.txt
+Elapsed: 0.919218 seconds
+Output:
+Time limit reached! Longest path found: 16 Path: 5 6 3 1
+
+=============================================
+File: test_39.txt
+Elapsed: 0.927499 seconds
+Output:
+Time limit reached! Longest path found: 18 Path: 5 2
+
+=============================================
+File: test_4.txt
+Elapsed: 0.927793 seconds
+Output:
+Time limit reached! Longest path found: 51 Path: 2 5 3 4 1
+
+=============================================
+File: test_40.txt
+Elapsed: 0.934269 seconds
+Output:
+Time limit reached! Longest path found: 65 Path: 5 6 1 2 3
+
+=============================================
+File: test_41.txt
+Elapsed: 0.921256 seconds
+Output:
+Time limit reached! Longest path found: 26 Path: 8 1 6
+
+=============================================
+File: test_42.txt
+Elapsed: 0.928455 seconds
+Output:
+Time limit reached! Longest path found: 19 Path: 11 10
+
+=============================================
+File: test_43.txt
+Elapsed: 0.916215 seconds
+Output:
+Time limit reached! Longest path found: 12 Path: 5 4 1
+
+=============================================
+File: test_44.txt
+Elapsed: 0.926904 seconds
+Output:
+Time limit reached! Longest path found: 31 Path: 6 7 3
+
+=============================================
+File: test_45.txt
+Elapsed: 0.92859 seconds
+Output:
+Time limit reached! Longest path found: 20 Path: 4 5 3 1 2
+
+=============================================
+File: test_46.txt
+Elapsed: 0.919655 seconds
+Output:
+Time limit reached! Longest path found: 37 Path: 3 7 1 8
+
+=============================================
+File: test_47.txt
+Elapsed: 0.919265 seconds
+Output:
+Time limit reached! Longest path found: 18 Path: 4 2
+
+=============================================
+File: test_48.txt
+Elapsed: 0.923175 seconds
+Output:
+Time limit reached! Longest path found: 62 Path: 7 2 8 3 6 4 1
+
+=============================================
+File: test_49.txt
+Elapsed: 0.917466 seconds
+Output:
+Time limit reached! Longest path found: 14 Path: 3 1 5
+
+=============================================
+File: test_5.txt
+Elapsed: 0.918058 seconds
+Output:
+Time limit reached! Longest path found: 20 Path: 4 1
+
+=============================================
+File: test_6.txt
+Elapsed: 0.921786 seconds
+Output:
+Time limit reached! Longest path found: 39 Path: 6 7 4 5 2
+
+=============================================
+File: test_7.txt
+Elapsed: 0.922024 seconds
+Output:
+Time limit reached! Longest path found: 30 Path: 3 7 4 9
+
+=============================================
+File: test_8.txt
+Elapsed: 0.923118 seconds
+Output:
+Time limit reached! Longest path found: 13 Path: 7 1 2
+
+=============================================
+File: test_9.txt
+Elapsed: 0.923722 seconds
+Output:
+Time limit reached! Longest path found: 24 Path: 1 6 3
+

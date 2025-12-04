@@ -3,9 +3,12 @@ import argparse
 import os
 from pathlib import Path
 from collections import defaultdict
+import matplotlib.pyplot as plt
+import numpy as np
 
 SELF_PATH = Path(os.path.dirname(os.path.abspath(__file__)))
-EXACT_LOG = SELF_PATH/"../exact_solution/test_output.log"
+EXACT_LOG = SELF_PATH/"../exact_solution/test_result_data/test_data.log"
+TESTS_PATH = SELF_PATH/"../approx_solution_2/test_cases"
 APPROX2_LOG = SELF_PATH/"../approx_solution_2/test_cases/test_output.log"
 
 def parse_exact_log(filename):
@@ -89,6 +92,19 @@ def parse_approx2_log(filename):
     
     return results
 
+def get_edge_count_from_file(filepath):
+    """Reads the first line 'V E' and returns E."""
+    try:
+        with open(filepath, 'r') as f:
+            first = f.readline().strip().split()
+            if len(first) >= 2:
+                return int(first[1])
+    except Exception:
+        pass
+    return None
+
+# ---------------------------------------------------------------------------
+
 def compare_logs(exact_results, approx_results):
     """Compare exact and approximation results."""
     all_files = set(exact_results.keys()) | set(approx_results.keys())
@@ -123,7 +139,11 @@ def compare_logs(exact_results, approx_results):
         approx_len = approx['length']
         exact_time = exact['time']
         approx_time = approx['time']
-        
+
+        graph_path = TESTS_PATH / test_file
+        edge_count = get_edge_count_from_file(graph_path)
+        print("E:", graph_path, edge_count)
+
         if exact_len and approx_len:
             accuracy = (approx_len / exact_len) * 100 if exact_len > 0 else 100.0
             stats['accuracy_sum'] += accuracy
@@ -145,6 +165,7 @@ def compare_logs(exact_results, approx_results):
         
         comparison.append({
             'file': test_file,
+            'edges': edge_count,
             'exact_len': exact_len,
             'approx_len': approx_len,
             'exact_time': exact_time,
@@ -155,21 +176,81 @@ def compare_logs(exact_results, approx_results):
     
     return comparison, stats
 
+def plot_path_length_analysis(comparison, stats):
+    """Generate plot showing accuracy/time vs edge count."""
+    
+    # Filter out entries with missing data
+    valid_data = [
+        c for c in comparison
+        if c['accuracy'] is not None
+        and c['exact_time'] is not None
+        and c['approx_time'] is not None
+        and c['edges'] is not None
+        and c['approx_time'] > 0
+    ]
+    
+    if not valid_data:
+        print("No valid data to plot")
+        return
+    
+    # Extract data for plotting
+    edge_counts = [c['edges'] for c in valid_data]
+    approx_times = [c['approx_time'] for c in valid_data]
+    accuracies = [c['accuracy'] for c in valid_data]
+    is_optimal = [c['status'] == 'OPTIMAL' for c in valid_data]
+    
+    # Calculate accuracy/time ratio
+    efficiency = [acc / time for acc, time in zip(accuracies, approx_times)]
+    
+    # Create single plot
+    fig, ax = plt.subplots(1, 1, figsize=(12, 7))
+    
+    optimal_mask = np.array(is_optimal)
+    suboptimal_mask = ~optimal_mask
+    
+    if np.any(optimal_mask):
+        ax.scatter(np.array(edge_counts)[optimal_mask],
+                   np.array(efficiency)[optimal_mask],
+                   c='green', s=150, alpha=0.7, label='Optimal',
+                   edgecolors='darkgreen', linewidth=2, marker='o')
+    if np.any(suboptimal_mask):
+        ax.scatter(np.array(edge_counts)[suboptimal_mask],
+                   np.array(efficiency)[suboptimal_mask],
+                   c='blue', s=150, alpha=0.7, label='Suboptimal',
+                   edgecolors='darkblue', linewidth=2, marker='s')
+    
+    ax.set_xlabel('Edge Count (E)', fontsize=14, fontweight='bold')
+    ax.set_ylabel('Efficiency (Accuracy % / Time in seconds)', fontsize=14, fontweight='bold')
+    ax.set_title('Algorithm Efficiency vs Edge Count', fontsize=16, fontweight='bold')
+    ax.legend(fontsize=12)
+    ax.grid(True, alpha=0.3)
+    
+    plt.tight_layout()
+    
+    # Save the figure
+    output_path = SELF_PATH / 'path_length_analysis.png'
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    print(f"\nPath length analysis plot saved to: {output_path}")
+    
+    # Show the plot
+    plt.show()
+
 def print_comparison(comparison, stats):
     """Print the comparison results."""
     print("=" * 80)
     print("COMPARISON RESULTS")
     print("=" * 80)
     
-    print(f"\n{'File':<40} {'Exact':<8} {'Approx':<8} {'Accuracy':<10} {'Status':<12}")
+    print(f"\n{'File':<40} {'Exact':<8} {'Approx':<8} {'Accuracy':<10} {'Status':<12} {'Edges':<8}")
     print("-" * 80)
     
     for result in comparison:
         exact_str = str(result['exact_len']) if result['exact_len'] is not None else "N/A"
         approx_str = str(result['approx_len']) if result['approx_len'] is not None else "N/A"
         acc_str = f"{result['accuracy']:.2f}%" if result['accuracy'] is not None else "N/A"
+        edge_str = str(result['edges']) if result['edges'] is not None else "N/A"
         
-        print(f"{result['file']:<40} {exact_str:<8} {approx_str:<8} {acc_str:<10} {result['status']:<12}")
+        print(f"{result['file']:<40} {exact_str:<8} {approx_str:<8} {acc_str:<10} {result['status']:<12} {edge_str:<8}")
     print()
     
     # Summary statistics
@@ -209,3 +290,6 @@ if __name__ == "__main__":
     
     # Print comparison
     print_comparison(comparison, stats)
+    
+    # Generate plot
+    plot_path_length_analysis(comparison, stats)
