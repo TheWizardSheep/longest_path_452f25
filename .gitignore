@@ -1,3 +1,4 @@
 test_case_generator/test_cases
 exact_solution/nohup.out
 approximation_solution_1/test_cases/*.txt
+approx_solution_2/test_cases/*.txt
