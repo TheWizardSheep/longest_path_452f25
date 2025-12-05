@@ -50,11 +50,11 @@ def pairwise(iterable):
 # Actual algorithm here
 def find_path():
     # longest path weight, longest path
-    biggest = [0, None]
+    biggest = [float('-inf'), None]
     for path_length in range(2, len(graph) + 1):
         for combo in itertools.permutations(graph.keys(), path_length):
             # Maintain a set of visited vertices to track cycles
-            vertices_seen = set()
+            # vertices_seen = set()
             combo_weight = 0
             
             # check for legality
@@ -65,14 +65,14 @@ def find_path():
                     print(f"testing ({u}, {v})")
 
                 # Check for cycles
-                if v in vertices_seen:
-                    still_legal = False
-                    break
+                # if v in vertices_seen:
+                #     still_legal = False
+                #     break
 
                 # Check for legality
                 if v in graph[u]:
                     combo_weight += graph[u][v]
-                    vertices_seen.add(u)
+                    # vertices_seen.add(u)
                     # vertices_seen.add(v)
                     this_path.append((u, v))
 
