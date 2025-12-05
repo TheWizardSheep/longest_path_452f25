@@ -3,7 +3,7 @@ file = sys.argv[1]
 
 
 def reduce_input():
-    with open(file) as f, open("../input.txt", "w") as i:
+    with open(file) as f, open("input.txt", "w") as i:
         n, m = map(int, f.readline().split())
 
         # 2m to account for the bidirectional edges we are adding
