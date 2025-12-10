@@ -18,14 +18,14 @@ Result:
 
 
 – Examples of calling the program:
-(The examples' command line calls assume you are in the longest_path_452f25 directory)
+(The examples' command line calls assume you are in the longest_path_452f25 directory, not the exact_solution directory)
 
 - If you would like to input the data via an input file, use --file to provide the file path.
-python exact_solution/cs412_longestpath_exact.py --file exact_solution/test_22.txt
+python exact_solution/longestpath_exact.py --file exact_solution/test_result_data/test_case_data_DONOTCHANGE/test_20.txt
 
 - If you would like to input the data via STDIN, call the program and then begin inputting data.
-python exact_solution/cs412_longestpath_exact.py
+python exact_solution/longestpath_exact.py
     --> Then input data via STDIN
 
 - To use debug mode, which prints each edge as it is tested, use the --debug flag.
-python exact_solution/cs412_longestpath_exact.py --file exact_solution/test_22.txt --debug
+python exact_solution/longestpath_exact.py --file exact_solution/test_result_data/test_case_data_DONOTCHANGE/test_20.txt --debug
