@@ -17,12 +17,12 @@ Randomization process overview:
 
 
 # Constants
-NUM_CASES = 5
-MIN_EDGES = 200 # forced to be at least 1
-MAX_EDGES = 1000
-MIN_VERTICES = 500 # forced to be at least 2
-MAX_VERTICES = 1000
-MAX_WEIGHT = 10
+NUM_CASES = 30
+MIN_EDGES = 600 # forced to be at least 1
+MAX_EDGES = 5000
+MIN_VERTICES = 300 # forced to be at least 2
+MAX_VERTICES = 750
+MAX_WEIGHT = 1000
 ALLOW_DUPLICATE_EDGES = False  # can two edges u->v with different weights exist?
 ALLOW_NEGATIVE_WEIGHTS = True # weights will either range from [0, MAX_WEIGHT] or [-MAX_WEIGHT, MAX_WEIGHT]
 UNDIRECTED = False  # adds identical reversed edges to each edge generaated

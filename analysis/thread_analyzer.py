@@ -10,14 +10,13 @@ from datetime import datetime
 
 # Configuration
 SELF_PATH = Path(os.path.dirname(os.path.abspath(__file__)))
-BASH_SCRIPT = SELF_PATH / "../approx_solution_2/test_cases/run_test_cases.sh"
-APPROX2_LOG = SELF_PATH / "../approx_solution_2/test_cases/test_output.log"
-EXACT_LOG = SELF_PATH / "../exact_solution/test_result_data/test_data.log"
+BASH_SCRIPT = SELF_PATH / "./thread_analysis_tests/run_test_cases.sh"
+APPROX2_LOG = SELF_PATH / "./thread_analysis_tests/run_test_cases.sh"
 OUTPUT_DIR = SELF_PATH / "thread_analysis_results"
 
 # Thread counts to test
-THREAD_COUNTS = range(1, 17)  # Test from 1 to 16 threads
-T_ARG = 1 # arg -t to pass to the program
+THREAD_COUNTS = range(1, 21)  # Test from 1 to 20 threads
+T_ARG = 0.9 # arg -t to pass to the program
 
 def parse_approx2_log(filename):
     """Parse the approximation algorithm log format."""
@@ -45,43 +44,6 @@ def parse_approx2_log(filename):
         
         path_match = re.search(r'Path:\s*(.+)', entry)
         path = path_match.group(1).strip() if path_match else None
-        
-        results[test_file] = {
-            'length': path_length,
-            'path': path,
-            'time': elapsed
-        }
-    
-    return results
-
-def parse_exact_log(filename):
-    """Parse the exact solver log format."""
-    results = {}
-    with open(filename, 'r') as f:
-        content = f.read()
-    
-    entries = content.strip().split('===============================')
-    
-    for entry in entries:
-        entry = entry.strip()
-        if not entry:
-            continue
-        
-        file_match = re.search(r'File:\stest_cases\/*(.+)', entry)
-        if not file_match:
-            continue
-        test_file = file_match.group(1).strip()
-        
-        time_match = re.search(r'Elapsed:\s*([\d.]+)\s*seconds', entry)
-        elapsed = float(time_match.group(1)) if time_match else None
-        
-        output_match = re.search(r'Output:\s*\n(\d+)\s*\n(.+)', entry)
-        if output_match:
-            path_length = int(output_match.group(1))
-            path = output_match.group(2).strip()
-        else:
-            path_length = None
-            path = None
         
         results[test_file] = {
             'length': path_length,
@@ -167,7 +129,7 @@ def run_test_with_threads(thread_count):
         traceback.print_exc()
         return None
 
-def analyze_results(all_results, exact_results):
+def analyze_results(all_results):
     """Analyze results across different thread counts."""
     
     # Get all test files
@@ -176,10 +138,21 @@ def analyze_results(all_results, exact_results):
         if results:
             test_files.update(results.keys())
     
+    # Find best path length for each test file across all thread counts
+    best_lengths = {}
+    for test_file in test_files:
+        max_length = 0
+        for results in all_results.values():
+            if results and test_file in results and results[test_file]['length'] is not None:
+                max_length = max(max_length, results[test_file]['length'])
+        if max_length > 0:
+            best_lengths[test_file] = max_length
+    
     analysis = {
         'per_thread': {},
-        'per_file': defaultdict(lambda: {'threads': [], 'lengths': [], 'accuracies': []}),
-        'summary': {}
+        'per_file': defaultdict(lambda: {'threads': [], 'lengths': [], 'percentages': []}),
+        'summary': {},
+        'best_lengths': best_lengths
     }
     
     # Analyze per thread count
@@ -187,29 +160,29 @@ def analyze_results(all_results, exact_results):
         if not results:
             continue
             
-        total_accuracy = 0
+        total_percentage = 0
         count = 0
-        optimal_count = 0
+        best_count = 0
         
         for test_file, result in results.items():
-            if result['length'] is not None and test_file in exact_results:
-                exact_len = exact_results[test_file]['length']
-                if exact_len:
-                    accuracy = (result['length'] / exact_len) * 100
-                    total_accuracy += accuracy
+            if result['length'] is not None and test_file in best_lengths:
+                best_len = best_lengths[test_file]
+                if best_len > 0:
+                    percentage = (result['length'] / best_len) * 100
+                    total_percentage += percentage
                     count += 1
                     
-                    if result['length'] == exact_len:
-                        optimal_count += 1
+                    if result['length'] == best_len:
+                        best_count += 1
                     
                     # Store per-file data
                     analysis['per_file'][test_file]['threads'].append(thread_count)
                     analysis['per_file'][test_file]['lengths'].append(result['length'])
-                    analysis['per_file'][test_file]['accuracies'].append(accuracy)
+                    analysis['per_file'][test_file]['percentages'].append(percentage)
         
         analysis['per_thread'][thread_count] = {
-            'avg_accuracy': total_accuracy / count if count > 0 else 0,
-            'optimal_count': optimal_count,
+            'avg_percentage': total_percentage / count if count > 0 else 0,
+            'best_count': best_count,
             'total_tests': len(results)
         }
     
@@ -224,33 +197,52 @@ def create_visualizations(analysis, output_dir):
     output_dir.mkdir(parents=True, exist_ok=True)
     
     threads = sorted(analysis['per_thread'].keys())
-    avg_accuracies = [analysis['per_thread'][t]['avg_accuracy'] for t in threads]
-    optimal_counts = [analysis['per_thread'][t]['optimal_count'] for t in threads]
+    avg_percentages = [analysis['per_thread'][t]['avg_percentage'] for t in threads]
+    best_counts = [analysis['per_thread'][t]['best_count'] for t in threads]
     
     # Create figure with subplots
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
     
-    # 1. Average Accuracy
-    ax1.plot(threads, avg_accuracies, marker='o', color='red', linewidth=2, markersize=8)
+    # 1. Average Percentage of Best
+    ax1.plot(threads, avg_percentages, marker='o', color='blue', linewidth=2, markersize=8)
     ax1.set_xlabel('Thread Count', fontsize=12)
-    ax1.set_ylabel('Average Accuracy (%)', fontsize=12)
-    ax1.set_title('Average Accuracy vs Thread Count', fontsize=14, fontweight='bold')
+    ax1.set_ylabel('Avg % of Best Found (%)', fontsize=12)
+    ax1.set_title('Average Performance vs Thread Count', fontsize=14, fontweight='bold')
     ax1.grid(True, alpha=0.3)
     ax1.set_xticks(threads)
-    if avg_accuracies:
-        ax1.set_ylim([min(avg_accuracies) - 5, 100])
+    if avg_percentages:
+        ax1.set_ylim([min(avg_percentages) - 5, 100])
     
-    # 2. Optimal Solutions Count
-    ax2.bar(threads, optimal_counts, color='green', alpha=0.7)
+    # 2. Best Solutions Count
+    ax2.bar(threads, best_counts, color='green', alpha=0.7)
     ax2.set_xlabel('Thread Count', fontsize=12)
-    ax2.set_ylabel('Number of Optimal Solutions', fontsize=12)
-    ax2.set_title('Optimal Solutions Found vs Thread Count', fontsize=14, fontweight='bold')
+    ax2.set_ylabel('Number of Best Solutions', fontsize=12)
+    ax2.set_title('Best Solutions Found vs Thread Count', fontsize=14, fontweight='bold')
     ax2.grid(True, alpha=0.3, axis='y')
     ax2.set_xticks(threads)
     
     plt.tight_layout()
     plt.savefig(output_dir / 'thread_analysis.png', dpi=300, bbox_inches='tight')
     print(f"\nSaved analysis plot to {output_dir / 'thread_analysis.png'}")
+    
+    # Create per-file comparison plot if there are multiple test files
+    if len(analysis['per_file']) > 1 and len(analysis['per_file']) <= 10:
+        fig, ax = plt.subplots(figsize=(12, 8))
+        
+        for test_file, data in sorted(analysis['per_file'].items()):
+            if data['threads']:
+                ax.plot(data['threads'], data['lengths'], marker='o', label=test_file, linewidth=2)
+        
+        ax.set_xlabel('Thread Count', fontsize=12)
+        ax.set_ylabel('Path Length Found', fontsize=12)
+        ax.set_title('Path Length vs Thread Count (Per Test File)', fontsize=14, fontweight='bold')
+        ax.grid(True, alpha=0.3)
+        ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=9)
+        ax.set_xticks(threads)
+        
+        plt.tight_layout()
+        plt.savefig(output_dir / 'per_file_comparison.png', dpi=300, bbox_inches='tight')
+        print(f"Saved per-file comparison to {output_dir / 'per_file_comparison.png'}")
     
     plt.close('all')
 
@@ -269,14 +261,14 @@ def print_summary(analysis):
         print("  4. Tests are completing successfully")
         return
     
-    print(f"\n{'Threads':<10} {'Avg Accuracy (%)':<20} {'Optimal Solutions':<20} {'Total Tests':<15}")
+    print(f"\n{'Threads':<10} {'Avg % of Best':<20} {'Best Solutions':<20} {'Total Tests':<15}")
     print("-"*80)
     
     for thread_count in sorted(analysis['per_thread'].keys()):
         stats = analysis['per_thread'][thread_count]
         print(f"{thread_count:<10} "
-              f"{stats['avg_accuracy']:<20.2f} "
-              f"{stats['optimal_count']:<20} "
+              f"{stats['avg_percentage']:<20.2f} "
+              f"{stats['best_count']:<20} "
               f"{stats['total_tests']:<15}")
     
     # Find best configurations
@@ -284,15 +276,22 @@ def print_summary(analysis):
     print("BEST CONFIGURATIONS")
     print("="*80)
     
-    best_accuracy_thread = max(analysis['per_thread'].items(), 
-                               key=lambda x: x[1]['avg_accuracy'])
-    best_optimal_thread = max(analysis['per_thread'].items(), 
-                             key=lambda x: x[1]['optimal_count'])
+    best_percentage_thread = max(analysis['per_thread'].items(), 
+                                 key=lambda x: x[1]['avg_percentage'])
+    best_solutions_thread = max(analysis['per_thread'].items(), 
+                                key=lambda x: x[1]['best_count'])
     
-    print(f"\nBest Average Accuracy: {best_accuracy_thread[0]} threads "
-          f"({best_accuracy_thread[1]['avg_accuracy']:.2f}%)")
-    print(f"Most Optimal Solutions: {best_optimal_thread[0]} threads "
-          f"({best_optimal_thread[1]['optimal_count']} optimal)")
+    print(f"\nBest Average Performance: {best_percentage_thread[0]} threads "
+          f"({best_percentage_thread[1]['avg_percentage']:.2f}% of best)")
+    print(f"Most Best Solutions: {best_solutions_thread[0]} threads "
+          f"({best_solutions_thread[1]['best_count']} best)")
+    
+    # Show best lengths found per file
+    print("\n" + "="*80)
+    print("BEST PATH LENGTHS FOUND (across all thread counts)")
+    print("="*80)
+    for test_file in sorted(analysis['best_lengths'].keys()):
+        print(f"{test_file}: {analysis['best_lengths'][test_file]}")
     
     print("\n" + "="*80)
 
@@ -306,7 +305,8 @@ def save_results_json(all_results, analysis, output_dir):
         'raw_results': {str(k): v for k, v in all_results.items()},
         'analysis': {
             'per_thread': {str(k): v for k, v in analysis['per_thread'].items()},
-            'per_file': {k: dict(v) for k, v in analysis['per_file'].items()}
+            'per_file': {k: dict(v) for k, v in analysis['per_file'].items()},
+            'best_lengths': analysis['best_lengths']
         }
     }
     
@@ -331,11 +331,6 @@ def main():
         print("Please update the BASH_SCRIPT path in the configuration section.")
         return
     
-    # Load exact results for comparison
-    print("\nLoading exact results for comparison...")
-    exact_results = parse_exact_log(EXACT_LOG)
-    print(f"Loaded {len(exact_results)} exact results")
-    
     # Run tests with different thread counts
     all_results = {}
     for thread_count in THREAD_COUNTS:
@@ -344,7 +339,7 @@ def main():
     
     # Analyze results
     print("\nAnalyzing results...")
-    analysis = analyze_results(all_results, exact_results)
+    analysis = analyze_results(all_results)
     
     # Print summary
     print_summary(analysis)
@@ -362,6 +357,7 @@ def main():
     print("="*80)
     print(f"\nResults saved to: {OUTPUT_DIR}")
     print(f"- Analysis plot: thread_analysis.png")
+    print(f"- Per-file comparison: per_file_comparison.png (if applicable)")
     print(f"- Detailed data: results.json")
 
 if __name__ == "__main__":

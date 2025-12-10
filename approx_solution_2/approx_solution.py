@@ -2,6 +2,7 @@ from collections import defaultdict
 from multiprocessing import Process, Manager
 import argparse
 import time
+import sys
 import random
 
 """ 
@@ -15,7 +16,7 @@ Logic:
 * might as well keep going until no path can be found, if we track cur_longest at each step then it is fine to do so
 """
 
-TIME_BUFFER = .2 # estimated number of seconds that the program requires for a complete shutdown
+TIME_BUFFER = .5 # estimated number of seconds that the program requires for a complete shutdown
 
 start_time = time.time()
 
@@ -33,12 +34,13 @@ def run_approximation(v, adj, t):
         if start_time + t <= time.time() + TIME_BUFFER:
             return longest, "->".join(best_path)
         
+        # find all nodes on the frontier
         for dv, dw in adj[v]:
             if not dv in visited:
                 frontier.append((dv, dw))
                 odds.append(dw)
 
-        # stop when can't continue
+        # stop when can't continue (ie no frontier)
         if len(frontier) == 0:
             break
         
@@ -46,13 +48,13 @@ def run_approximation(v, adj, t):
         # negatives and zeros become 1
         odds = [max(w,1) for w in odds]
 
-        
         # pick a vertex to go to next, and update the path accordingly
         dv, dw = random.choices(frontier, weights=odds)[0]
         pathlen += dw
         path.append(dv)
         visited.add(dv)
         v = dv
+
         # update best
         if pathlen > longest:
             longest = pathlen
@@ -88,7 +90,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="An approximation algorithm for the longest path problem"
     )
-    parser.add_argument("-t", type=int, help="The maximum running time of the program")
+    parser.add_argument("-t", type=float, help="The maximum running time of the program")
     parser.add_argument(
         "-p",
         type=int,
@@ -101,6 +103,11 @@ if __name__ == "__main__":
     num_processes = args.p if not args.p is None else 1
     verbose = args.v or args.verbose
     start_time = time.time()
+    
+    # min time assertion
+    if t <= TIME_BUFFER:
+        print(f"At least {TIME_BUFFER} seconds must allowed")
+        sys.exit(1)
 
     # input a graph
     V, E = map(int, input().split())

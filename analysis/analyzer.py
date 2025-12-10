@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 SELF_PATH = Path(os.path.dirname(os.path.abspath(__file__)))
-EXACT_LOG = SELF_PATH/"../exact_solution/test_result_data/test_data.log"
+EXACT_LOG = SELF_PATH/"../exact_solution/test_result_data/test_data_CLEANED.log"
 TESTS_PATH = SELF_PATH/"../approx_solution_2/test_cases"
 APPROX2_LOG = SELF_PATH/"../approx_solution_2/test_cases/test_output.log"
 
