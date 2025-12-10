@@ -4,4 +4,3 @@ exact_solution/get_data.py
 approximation_solution_1/test_cases/**/*.txt
 approximation_solution_1/test_cases/exact_solution_tests/*.txt
 approx_solution_2/test_cases/*.txt
-exact_solution/test_output.log
