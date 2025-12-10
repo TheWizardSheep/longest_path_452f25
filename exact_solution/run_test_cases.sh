@@ -16,7 +16,7 @@ for file in "$folder"/*; do
     start=$(date +%s.%N)
 
     # Run Python using --file instead of stdin
-    output=$(python3 cs412_longestpath_exact.py --file "$file" 2>&1)
+    output=$(python3 longestpath_exact.py --file "$file" 2>&1)
 
     end=$(date +%s.%N)
     elapsed=$(echo "$end - $start" | bc)
