@@ -17,7 +17,7 @@ Randomization process overview:
 
 
 # Constants
-NUM_CASES = 20
+NUM_CASES = 30
 MIN_EDGES = 5000 # forced to be at least 1
 MAX_EDGES = 20000
 MIN_VERTICES = 500 # forced to be at least 2
