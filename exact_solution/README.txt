@@ -2,19 +2,17 @@
 are studying a graph problem, express the bounds in terms of V and
 E.
 
-Since the algorithm is dominated by various permutations of vertices,
+Since the algorithm is dominated by variable length permutations of vertices,
 the runtime of the algorithm will be almost entirely in terms of V.
 
-Build the graph from input:    O(E).
-Permute every vertex combination of every length:    O(V!)
-    -Check each vertex combination for legality (could be up to V long):    O(V)
-    -Check if the combination is the biggest so far:    O(1)
-Traverse the resulting path (could be up to V long):    O(V)
-Result:
-    -The permutation and legality check combine for O(V * V!)
-    -The permutation and legality check dominate the runtime.
-    -The algorithm’s runtime simplifies to O(V * V!)
-
+Build the graph from input:    O(V + E).
+For every possible path length:    O(V)
+    -For every vertex permutation of that length:    O(V!)
+        -Zip consecutive vertices into edges:    O(V)
+        -Check each path for legality:    O(V)
+    -Update the longest path if necessary:    O(1)
+Traverse and output the longest path (could be up to V long):    O(V)
+Total runtime:    O(V^2 * V!)
 
 
 – Examples of calling the program:
