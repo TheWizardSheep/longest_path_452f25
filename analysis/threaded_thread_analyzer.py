@@ -7,16 +7,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 import json
 from datetime import datetime
+from concurrent.futures import ProcessPoolExecutor, as_completed
+import multiprocessing
 
 # Configuration
 SELF_PATH = Path(os.path.dirname(os.path.abspath(__file__)))
-BASH_SCRIPT = SELF_PATH / "./thread_analysis_tests/run_test_cases.sh"
-APPROX2_LOG = SELF_PATH / "./thread_analysis_tests/test_output.log"
+BASH_SCRIPT = SELF_PATH / "../approx_solution_2/test_cases/run_test_cases.sh"
+APPROX2_LOG = SELF_PATH / "../approx_solution_2/test_cases/test_output.log"
 OUTPUT_DIR = SELF_PATH / "thread_analysis_results"
 
 # Thread counts to test
-THREAD_COUNTS = range(1, 24)  # Test from 1 to 20 threads
+THREAD_COUNTS = range(1, 21)  # Test from 1 to 20 threads
 T_ARG = 5 # arg -t to pass to the program
+MAX_PARALLEL_JOBS = multiprocessing.cpu_count()  # Number of tests to run in parallel
 
 def parse_approx2_log(filename):
     """Parse the approximation algorithm log format."""
@@ -55,9 +58,7 @@ def parse_approx2_log(filename):
 
 def run_test_with_threads(thread_count):
     """Run the bash script with specified thread count."""
-    print(f"\n{'='*60}")
-    print(f"Running test with {thread_count} threads...")
-    print(f"{'='*60}")
+    print(f"\nThread count {thread_count}: Starting...")
     
     try:
         # On Windows, need to run through bash (Git Bash, WSL, or similar)
@@ -77,57 +78,50 @@ def run_test_with_threads(thread_count):
                                             timeout=5)
                 if test_result.returncode == 0:
                     bash_cmd = bash_exe
-                    print(f"Using bash: {bash_exe}")
                     break
             except (FileNotFoundError, subprocess.TimeoutExpired):
                 continue
         
         if bash_cmd is None:
-            print("Error: Could not find bash executable.")
-            print("Please install Git Bash or WSL, or ensure bash is in your PATH")
-            return None
+            print(f"Thread count {thread_count}: Error - Could not find bash executable.")
+            return thread_count, None
+        
+        # Create a unique log file for this thread count to avoid conflicts
+        log_file = APPROX2_LOG.parent / f"test_output_threads_{thread_count}.log"
         
         # Build command with bash interpreter
         cmd = [bash_cmd, str(BASH_SCRIPT), "-t", str(T_ARG), "-p", str(thread_count)]
-        print(f"Executing: {' '.join(cmd)}")
         
         result = subprocess.run(
             cmd,
             capture_output=True,
             text=True,
-            timeout=600  # 10 minute timeout
+            timeout=600,  # 10 minute timeout
+            env={**os.environ, 'OUTPUT_LOG': str(log_file)}  # Pass custom log location
         )
         
-        print(f"Exit code: {result.returncode}")
-        
-        if result.stdout:
-            print(f"stdout preview: {result.stdout[:200]}")
-        
         if result.returncode != 0:
-            print(f"Warning: Script returned non-zero exit code: {result.returncode}")
-            print(f"stderr: {result.stderr}")
+            print(f"Thread count {thread_count}: Warning - Non-zero exit code: {result.returncode}")
         
-        # Parse the log file
-        if APPROX2_LOG.exists():
+        # Parse the log file (try both custom location and default)
+        results = None
+        if log_file.exists():
+            results = parse_approx2_log(log_file)
+            print(f"Thread count {thread_count}: Completed - {len(results)} test results")
+        elif APPROX2_LOG.exists():
             results = parse_approx2_log(APPROX2_LOG)
-            print(f"Successfully parsed {len(results)} test results")
-            return results
+            print(f"Thread count {thread_count}: Completed - {len(results)} test results")
         else:
-            print(f"Error: Log file not found at {APPROX2_LOG}")
-            return None
+            print(f"Thread count {thread_count}: Error - Log file not found")
+        
+        return thread_count, results
             
     except subprocess.TimeoutExpired:
-        print(f"Error: Test with {thread_count} threads timed out")
-        return None
-    except FileNotFoundError:
-        print(f"Error: Bash script not found at {BASH_SCRIPT}")
-        print("Please check the BASH_SCRIPT path in the configuration")
-        return None
+        print(f"Thread count {thread_count}: Error - Timed out")
+        return thread_count, None
     except Exception as e:
-        print(f"Error running test with {thread_count} threads: {e}")
-        import traceback
-        traceback.print_exc()
-        return None
+        print(f"Thread count {thread_count}: Error - {e}")
+        return thread_count, None
 
 def analyze_results(all_results):
     """Analyze results across different thread counts."""
@@ -226,7 +220,7 @@ def create_visualizations(analysis, output_dir):
     print(f"\nSaved analysis plot to {output_dir / 'thread_analysis.png'}")
     
     # Create per-file comparison plot if there are multiple test files
-    if len(analysis['per_file']) > 1:
+    if len(analysis['per_file']) > 1 and len(analysis['per_file']) <= 10:
         fig, ax = plt.subplots(figsize=(12, 8))
         
         for test_file, data in sorted(analysis['per_file'].items()):
@@ -322,6 +316,7 @@ def main():
     print("MULTI-THREADED APPROXIMATION ANALYSIS")
     print("="*80)
     print(f"Testing thread counts: {list(THREAD_COUNTS)}")
+    print(f"Running {MAX_PARALLEL_JOBS} tests in parallel")
     print(f"Bash script: {BASH_SCRIPT}")
     print(f"Output directory: {OUTPUT_DIR}")
     
@@ -331,11 +326,25 @@ def main():
         print("Please update the BASH_SCRIPT path in the configuration section.")
         return
     
-    # Run tests with different thread counts
+    # Run tests with different thread counts in parallel
+    print("\n" + "="*80)
+    print("RUNNING TESTS (PARALLELIZED)")
+    print("="*80)
+    
     all_results = {}
-    for thread_count in THREAD_COUNTS:
-        results = run_test_with_threads(thread_count)
-        all_results[thread_count] = results
+    with ProcessPoolExecutor(max_workers=MAX_PARALLEL_JOBS) as executor:
+        # Submit all jobs
+        future_to_thread = {executor.submit(run_test_with_threads, tc): tc 
+                           for tc in THREAD_COUNTS}
+        
+        # Collect results as they complete
+        for future in as_completed(future_to_thread):
+            thread_count, results = future.result()
+            all_results[thread_count] = results
+    
+    print("\n" + "="*80)
+    print("ALL TESTS COMPLETED")
+    print("="*80)
     
     # Analyze results
     print("\nAnalyzing results...")

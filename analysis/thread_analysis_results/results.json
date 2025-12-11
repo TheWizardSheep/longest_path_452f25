@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-04T03:31:03.692508",
+  "timestamp": "2025-12-10T22:05:36.223651",
   "thread_counts_tested": [
     1,
     2,
@@ -16,4651 +16,2424 @@
     13,
     14,
     15,
-    16
+    16,
+    17,
+    18,
+    19,
+    20
   ],
   "raw_results": {
-    "1": {
+    "5": {
       "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.913818
+        "length": 0,
+        "path": null,
+        "time": 7.48513
       },
       "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.917674
+        "length": 0,
+        "path": null,
+        "time": 8.55246
       },
       "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.904075
+        "length": 28,
+        "path": "10 4 1",
+        "time": 11.0883
       },
       "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.899971
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 10.1967
       },
       "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.896844
+        "length": 0,
+        "path": null,
+        "time": 9.69405
       },
       "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.903792
+        "length": 19,
+        "path": "6 1",
+        "time": 10.6089
       },
       "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.903172
+        "length": 8,
+        "path": "3 5 4",
+        "time": 15.2896
       },
       "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.923699
+        "length": 41,
+        "path": "5 1 3 6",
+        "time": 10.4685
       },
       "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.902186
+        "length": 31,
+        "path": "5 10 1 11 7 9",
+        "time": 11.0633
       },
       "test_17.txt": {
-        "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.902511
+        "length": 48,
+        "path": "2 7 6 8 4",
+        "time": 9.56061
       },
       "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.908268
+        "length": 20,
+        "path": "1 4 5",
+        "time": 9.95567
       },
       "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.917119
+        "length": 48,
+        "path": "6 5 4 2",
+        "time": 10.2052
       },
       "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.906614
+        "length": 33,
+        "path": "5 10 14 11 1",
+        "time": 11.3033
       },
       "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.902949
+        "length": 36,
+        "path": "7 9 3",
+        "time": 10.2666
       },
       "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.905623
+        "length": 55,
+        "path": "9 7 10 1 5 8 2 6 11",
+        "time": 10.7852
       },
       "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.904122
+        "length": 26,
+        "path": "8 3 9",
+        "time": 11.4527
       },
       "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.899679
+        "length": 44,
+        "path": "3 5 4 1",
+        "time": 8.49651
       },
       "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.900104
+        "length": 24,
+        "path": "12 8 2",
+        "time": 9.56016
       },
       "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.90174
+        "length": 35,
+        "path": "4 8 1 9 5",
+        "time": 9.57113
       },
       "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.910463
+        "length": 12,
+        "path": "5 2",
+        "time": 11.1617
       },
       "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.904611
+        "length": 31,
+        "path": "10 1 4",
+        "time": 10.3727
       },
       "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.930355
+        "length": 7,
+        "path": "1 9",
+        "time": 8.33073
       },
       "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.899564
+        "length": 17,
+        "path": "8 2",
+        "time": 11.3488
       },
       "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.900825
+        "length": 37,
+        "path": "2 1 9 7 5",
+        "time": 10.1242
       },
       "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.898554
+        "length": 0,
+        "path": null,
+        "time": 9.81544
       },
       "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.899744
+        "length": 20,
+        "path": "4 5 1 2",
+        "time": 11.1171
       },
       "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.905645
+        "length": 21,
+        "path": "9 8 1",
+        "time": 10.6816
       },
       "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.906043
+        "length": 37,
+        "path": "4 2 6 7 8",
+        "time": 9.52004
       },
       "test_34.txt": {
         "length": 19,
-        "path": "3 4 6",
-        "time": 0.913534
+        "path": "4 1",
+        "time": 9.90415
       },
       "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.903134
+        "length": 37,
+        "path": "3 6 8",
+        "time": 7.77432
       },
       "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.901803
+        "length": 27,
+        "path": "7 8 12",
+        "time": 10.855
       },
       "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.902715
+        "length": 31,
+        "path": "14 6 2 9 1",
+        "time": 9.89643
       },
       "test_38.txt": {
-        "length": 16,
-        "path": "3 1",
-        "time": 0.913476
+        "length": 0,
+        "path": null,
+        "time": 10.0699
       },
       "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.900356
+        "length": 34,
+        "path": "3 6 1",
+        "time": 10.5201
       },
       "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.897487
+        "length": 15,
+        "path": "5 1",
+        "time": 9.81055
       },
       "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.903799
+        "length": 50,
+        "path": "5 4 7 1 6 3",
+        "time": 10.1912
       },
       "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.906915
+        "length": 15,
+        "path": "7 3",
+        "time": 11.5194
       },
       "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.904292
+        "length": 8,
+        "path": "2 3 5",
+        "time": 11.0519
       },
       "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.902251
+        "length": 41,
+        "path": "5 7 1 3",
+        "time": 7.91755
       },
       "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.900501
+        "length": 27,
+        "path": "1 6 2",
+        "time": 9.63851
       },
       "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.902974
+        "length": 46,
+        "path": "5 1 6 7 3",
+        "time": 9.83686
       },
       "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.898522
+        "length": 17,
+        "path": "13 5",
+        "time": 9.38837
       },
       "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.901177
+        "length": 14,
+        "path": "4 11",
+        "time": 10.9174
       },
       "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.90681
+        "length": 47,
+        "path": "9 10 3 2",
+        "time": 8.34378
       },
       "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.905696
+        "length": 16,
+        "path": "5 4",
+        "time": 9.70349
       },
       "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.900844
+        "length": 19,
+        "path": "11 9",
+        "time": 11.3502
       },
       "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.898172
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 9.15693
       },
       "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.915138
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 10.1378
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.907336
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 10.7267
       },
       "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.899241
+        "length": 0,
+        "path": null,
+        "time": 9.281
       }
     },
-    "2": {
-      "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.895723
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.897488
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.898694
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.896188
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.897863
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.902359
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.895437
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.896794
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.896278
-      },
-      "test_17.txt": {
-        "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.897959
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.896104
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.896624
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.898084
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.899559
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.896873
-      },
-      "test_22.txt": {
+    "1": {
+      "test_9.txt": {
         "length": 16,
-        "path": "3 5",
-        "time": 0.897339
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.898975
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.896482
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.896026
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.898344
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.898668
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "6 4",
-        "time": 0.89688
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.897685
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.896574
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.897005
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.897789
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.898051
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.896302
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.898118
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.89677
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.895767
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.897991
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "3 1",
-        "time": 0.897627
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.897244
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.897101
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.895216
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.901943
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.895716
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.896003
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.895966
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.897949
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.900145
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.897821
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.898426
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.899009
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.897493
+        "path": "8 5",
+        "time": 6.51872
       },
       "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.89542
+        "length": 0,
+        "path": null,
+        "time": 10.5267
       },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.898219
-      },
-      "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.896623
-      },
-      "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.896809
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 9.47147
       }
     },
     "3": {
-      "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.897806
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.896422
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.897199
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.902037
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.90114
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.898953
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.897797
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.89905
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.897185
-      },
-      "test_17.txt": {
-        "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.895564
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.89769
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.898265
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.896257
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.900959
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.89656
-      },
-      "test_22.txt": {
+      "test_9.txt": {
         "length": 16,
-        "path": "3 5",
-        "time": 0.897391
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.900824
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.900588
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.897657
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.898095
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.897492
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "6 4",
-        "time": 0.900282
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.895517
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.900296
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.897277
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.900336
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.896474
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.896333
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.898593
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.895983
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.89732
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.898069
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "5 6 3 1",
-        "time": 0.897745
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.899317
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.897391
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.897694
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.898216
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.905061
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.899758
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.897279
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.900958
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.897519
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.9006
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.896284
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.897882
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.897305
+        "path": "8 5",
+        "time": 10.1437
       },
       "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.897843
+        "length": 0,
+        "path": null,
+        "time": 10.5267
       },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.895839
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 9.47147
       },
-      "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.899551
+      "test_47.txt": {
+        "length": 14,
+        "path": "4 11",
+        "time": 8.9305
       },
-      "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.898242
+      "test_48.txt": {
+        "length": 47,
+        "path": "9 10 3 2",
+        "time": 10.8649
       }
     },
-    "4": {
-      "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.90081
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.898308
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 1 3 5 2 4",
-        "time": 0.898875
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.900223
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.896574
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.8979
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.900482
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.900856
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.900251
-      },
-      "test_17.txt": {
-        "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.901886
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.898819
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.897855
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.900554
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.900544
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.898026
-      },
-      "test_22.txt": {
+    "2": {
+      "test_9.txt": {
         "length": 16,
-        "path": "3 5",
-        "time": 0.895896
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.899708
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.899644
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.899187
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.899673
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.899247
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.901758
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.901449
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.898929
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.898254
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.896467
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.899379
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.899558
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.895573
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.896004
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.898006
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.895826
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "5 6 3 1",
-        "time": 0.898396
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.898063
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.899002
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.89587
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.898099
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.899079
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.899807
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.903049
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.897511
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.89995
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.901646
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.899086
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.897548
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.900386
+        "path": "8 5",
+        "time": 7.52056
       },
       "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.899349
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.899436
-      },
-      "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.900169
-      },
-      "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.91589
-      }
-    },
-    "5": {
-      "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.898431
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.901267
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 1 3 5 2 4",
-        "time": 0.897513
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.901951
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.900069
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.905243
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.898791
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.897059
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.899872
-      },
-      "test_17.txt": {
-        "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.897146
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.896245
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.897672
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.9014
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.899878
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.897958
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.901595
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.903848
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.903096
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.9027
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.901831
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.90013
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.899334
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.901498
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.901258
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.898261
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.898839
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.901311
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.898129
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.900774
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.898312
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.900659
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.90018
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "3 1",
-        "time": 0.898252
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.898661
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.899081
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.903919
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.901996
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.902222
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.89824
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.899646
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.902391
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.898954
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.900284
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.897465
+        "length": 0,
+        "path": null,
+        "time": 10.5267
       },
       "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 10.8081
+      },
+      "test_47.txt": {
         "length": 14,
-        "path": "3 1 5",
-        "time": 0.913684
+        "path": "4 11",
+        "time": 8.9305
       },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.906015
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.904934
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.900104
+      "test_48.txt": {
+        "length": 47,
+        "path": "9 10 3 2",
+        "time": 10.8649
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.901564
-      },
-      "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.901346
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 9.60689
       }
     },
     "6": {
-      "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.907737
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.900595
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.905929
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.901668
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.902199
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.907643
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.911148
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.902
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.902438
-      },
-      "test_17.txt": {
-        "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.906592
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "2 1 3 4 5",
-        "time": 0.912579
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.911539
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.913203
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.913555
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.909243
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.909864
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.914649
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.90981
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.909988
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.91376
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.923817
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.9127
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.916687
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.912244
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.908655
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.913322
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.911862
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.908812
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.913397
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.914545
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.910337
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.909937
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "3 1",
-        "time": 0.910596
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.913981
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.907315
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.911259
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.912241
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "6 9",
-        "time": 0.907743
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.908783
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.909968
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.906097
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.913684
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.907192
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.911717
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.911983
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.909737
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.911086
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.912839
-      },
-      "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.908679
-      },
       "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.907783
+        "length": 16,
+        "path": "8 5",
+        "time": 6.67537
       }
     },
-    "7": {
-      "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.911342
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.908978
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.907781
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.911811
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.914418
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.910164
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.911895
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.920165
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.900587
-      },
-      "test_17.txt": {
-        "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.903052
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "2 1 3 4 5",
-        "time": 0.902677
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.918116
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.906162
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.904235
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.903318
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.901851
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.89955
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.900882
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.899109
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.915081
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.910206
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.913777
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.915622
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.911442
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.911378
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.906664
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.915685
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.920572
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.909006
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.909711
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.910016
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.907697
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "5 6 3 1",
-        "time": 0.90883
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.909708
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.91152
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.917283
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.908886
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.910309
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.916466
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.910532
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.90946
-      },
-      "test_46.txt": {
+    "4": {
+      "test_7.txt": {
         "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.911207
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.908041
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.914705
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.910413
+        "path": "1 5 6 3",
+        "time": 9.3189
       },
       "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.911909
+        "length": 19,
+        "path": "11 9",
+        "time": 10.6467
       },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.910006
+      "test_0.txt": {
+        "length": 45,
+        "path": "8 12 3 5 9",
+        "time": 10.6729
       },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.91268
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 8.98495
       },
-      "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.907977
+      "test_48.txt": {
+        "length": 0,
+        "path": null,
+        "time": 12.9534
       },
       "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.907039
+        "length": 16,
+        "path": "8 5",
+        "time": 10.7342
       }
     },
     "8": {
       "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.911934
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.913651
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.912732
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.914886
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.917658
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.910321
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.910863
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.925947
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.909374
-      },
-      "test_17.txt": {
         "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.913512
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.906669
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.912853
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.908606
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.908382
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.909333
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.91284
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.907146
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.909377
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.909246
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.911136
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.914103
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "6 4",
-        "time": 0.912754
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.911822
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.92
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.908943
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.910676
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.910231
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.908079
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.911002
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.910534
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.911843
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.911406
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "5 6 3 1",
-        "time": 0.9082
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.912869
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.909222
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.909739
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.909783
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.914901
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.910282
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.916212
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.911791
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.910847
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.912723
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.908116
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.913723
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.907908
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.910187
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.910277
+        "path": "8 12 3 5 9",
+        "time": 10.7167
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.911982
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 10.3061
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 8.92634
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 8.0003
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 15.0084
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 13.4921
       },
       "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.911336
+        "length": 16,
+        "path": "8 5",
+        "time": 10.4255
       }
     },
     "9": {
       "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.913844
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.912479
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.913072
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.913648
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.913381
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.932461
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.915831
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.909792
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.913235
-      },
-      "test_17.txt": {
         "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.914595
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "2 1 3 4 5",
-        "time": 0.911536
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.912519
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.912081
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.911256
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.914829
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.913028
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.915994
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.909663
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.912174
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.90946
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.913483
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.917583
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.912208
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.91554
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.909987
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.90792
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.921545
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.908973
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.912118
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.910892
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.915279
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.910081
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "5 6 3 1",
-        "time": 0.911323
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.909889
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.91061
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.908606
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.911894
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.912749
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.910055
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.91301
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.914856
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.909636
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.917621
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.910167
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.911898
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.917687
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.914593
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.910244
+        "path": "8 12 3 5 9",
+        "time": 10.7167
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.912255
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 10.3061
+      },
+      "test_6.txt": {
+        "length": 0,
+        "path": null,
+        "time": 11.2895
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 11.0747
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 15.0084
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 13.4921
       },
       "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.916405
+        "length": 16,
+        "path": "8 5",
+        "time": 11.0549
+      }
+    },
+    "7": {
+      "test_0.txt": {
+        "length": 45,
+        "path": "8 12 3 5 9",
+        "time": 10.7167
+      },
+      "test_8.txt": {
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 10.3061
+      },
+      "test_6.txt": {
+        "length": 0,
+        "path": null,
+        "time": 11.2895
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 11.0747
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 15.0084
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 13.4921
+      },
+      "test_9.txt": {
+        "length": 16,
+        "path": "8 5",
+        "time": 10.6976
       }
     },
     "10": {
       "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.912643
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.912041
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 1 3 5 2 4",
-        "time": 0.912573
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.912756
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.912933
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.912103
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.913313
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.913069
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.912571
-      },
-      "test_17.txt": {
         "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.919188
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.915494
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.91421
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.917942
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.91564
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.913263
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.911462
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.913086
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.911759
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.913232
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.910485
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.911091
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "6 4",
-        "time": 0.910533
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.912568
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.914327
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.913175
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.912844
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.918414
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.912101
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.912639
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.920837
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.910005
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.90956
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "5 6 3 1",
-        "time": 0.912724
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.912294
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.923268
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.912616
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.911577
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.912656
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.911469
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.911125
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.917044
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.913264
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.915143
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.916228
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.909096
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.910834
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.917038
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.914585
+        "path": "8 12 3 5 9",
+        "time": 12.2244
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.914017
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 8.93694
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 9.90819
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 9.22637
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 13.4921
       },
       "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.91107
+        "length": 16,
+        "path": "8 5",
+        "time": 9.0163
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.46109
+      },
+      "test_7.txt": {
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 12.6369
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 9.83354
       }
     },
     "11": {
       "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.937937
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.911178
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.915144
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.911799
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.913839
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.909476
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.912861
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.915948
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.913067
-      },
-      "test_17.txt": {
         "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.915333
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.912816
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.911134
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.917474
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.91217
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.910865
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.919563
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.912188
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.918902
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.912467
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.916408
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.917519
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "6 4",
-        "time": 0.918389
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.910798
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.911731
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.912126
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.912385
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.908798
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.912243
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.910669
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.92048
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.913278
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.910226
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "3 1",
-        "time": 0.93333
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.915651
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.914569
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.91443
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.911387
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "4 2",
-        "time": 0.914891
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.918832
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.917058
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.911763
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.913143
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.916738
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.912582
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.921884
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.912748
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.911201
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.91611
+        "path": "8 12 3 5 9",
+        "time": 12.2244
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.912117
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 8.93694
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 9.90819
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 9.22637
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 13.4921
       },
       "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.913707
+        "length": 16,
+        "path": "8 5",
+        "time": 9.0563
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 12.6369
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 11.4876
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 8.32647
       }
     },
     "12": {
       "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.920265
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.916669
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.915723
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.918685
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.918998
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.915745
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.917461
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.922141
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.926724
-      },
-      "test_17.txt": {
         "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.914482
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.911534
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.908833
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.914738
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.912499
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.912213
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.917925
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.912539
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.919585
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.925635
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.938092
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.920308
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.925565
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.932153
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.917303
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.923855
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.916142
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.906124
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.905248
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.906901
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.905192
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.905698
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.907877
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "3 1",
-        "time": 0.907766
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.906211
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.907041
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.905347
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.909783
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.904935
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.905746
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.905247
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.907404
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.906047
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.906016
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.903132
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.90669
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.910505
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.906796
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.906258
+        "path": "8 12 3 5 9",
+        "time": 12.2244
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.908439
-      },
-      "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.910779
-      }
-    },
-    "13": {
-      "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.909752
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.910395
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.906777
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.906943
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.910482
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.907583
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.906762
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.905604
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.904964
-      },
-      "test_17.txt": {
-        "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.91024
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.908252
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.90659
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.906303
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.904948
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.904696
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.910238
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.906348
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.907823
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.906058
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.906164
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.906599
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.905728
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.907653
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.907089
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.905591
-      },
-      "test_31.txt": {
         "length": 31,
-        "path": "4 10 3",
-        "time": 0.908376
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.910288
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.91325
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.905361
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.904831
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.911511
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.904512
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "5 6 3 1",
-        "time": 0.906847
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.907746
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.906708
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.906712
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.907252
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.905343
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.905975
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.905944
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.907313
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.906582
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.907981
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.907086
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.908467
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.912436
+        "path": "9 14 4 3 13",
+        "time": 8.93694
       },
       "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.907976
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 9.90819
       },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.913413
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
       },
-      "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.906748
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 9.22637
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 13.4921
       },
       "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.907223
+        "length": 16,
+        "path": "8 5",
+        "time": 9.60558
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 12.6369
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 11.5995
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 8.32647
       }
     },
     "14": {
       "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.912524
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.910811
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.91402
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.910765
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.90877
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.90669
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.908642
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.910975
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.903283
-      },
-      "test_17.txt": {
         "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.904681
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "2 1 3 4 5",
-        "time": 0.910642
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.908648
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.91368
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.907525
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.910787
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.909011
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.909471
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.909688
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.910232
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.90688
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.905187
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "6 4",
-        "time": 0.915896
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.909657
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.908519
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.907609
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.911032
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.909033
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.908628
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.910188
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.906437
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.914284
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.911183
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "3 1",
-        "time": 0.907233
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.906513
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.906643
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.906525
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.910038
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.905761
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.905483
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.907477
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.905812
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.907339
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.906871
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.926616
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.907318
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.906487
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.911121
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.924344
+        "path": "8 12 3 5 9",
+        "time": 12.2244
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.908371
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 7.58506
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 9.90819
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 9.22637
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 13.4921
       },
       "test_9.txt": {
-        "length": 24,
-        "path": "1 6 3",
-        "time": 0.908312
+        "length": 0,
+        "path": null,
+        "time": 7.96805
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 8.9597
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 8.44417
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 8.52833
+      },
+      "test_13.txt": {
+        "length": 19,
+        "path": "6 1",
+        "time": 8.6681
+      }
+    },
+    "13": {
+      "test_0.txt": {
+        "length": 45,
+        "path": "8 12 3 5 9",
+        "time": 12.2244
+      },
+      "test_8.txt": {
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 7.58506
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 9.90819
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 9.22637
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 13.4921
+      },
+      "test_9.txt": {
+        "length": 16,
+        "path": "8 5",
+        "time": 7.40808
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 8.9597
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 8.44417
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 9.37124
+      },
+      "test_13.txt": {
+        "length": 19,
+        "path": "6 1",
+        "time": 7.15694
+      },
+      "test_14.txt": {
+        "length": 8,
+        "path": "3 5 4",
+        "time": 8.40992
       }
     },
     "15": {
       "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.916852
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.910267
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 3 5 2 4",
-        "time": 0.909801
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.913245
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.912346
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.906413
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.909543
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.910259
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.911085
-      },
-      "test_17.txt": {
         "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.911652
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "2 1 3 4 5",
-        "time": 0.91055
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.911665
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.908924
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.912867
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.910486
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.910096
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.9128
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.910329
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.913283
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.910867
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.911602
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.907871
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.905493
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.910077
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.908541
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.907232
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.913572
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.906791
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.90968
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.910504
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.909367
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.907943
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "3 1",
-        "time": 0.909274
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.909185
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.909808
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.908665
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.907379
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.909031
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.907529
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.906383
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.90873
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.912444
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.909001
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.911033
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.914702
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.917822
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.911858
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.908245
+        "path": "8 12 3 5 9",
+        "time": 12.2244
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.913439
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 7.47614
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 7.07681
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 7.90051
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 9.49532
       },
       "test_9.txt": {
+        "length": 16,
+        "path": "8 5",
+        "time": 7.17583
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.18333
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 8.44417
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 9.37124
+      },
+      "test_13.txt": {
+        "length": 19,
+        "path": "6 1",
+        "time": 9.39926
+      },
+      "test_14.txt": {
+        "length": 8,
+        "path": "3 5 4",
+        "time": 9.32606
+      },
+      "test_15.txt": {
+        "length": 41,
+        "path": "5 1 3 6",
+        "time": 9.0097
+      },
+      "test_16.txt": {
+        "length": 48,
+        "path": "2 7 6 8 4",
+        "time": 8.67367
+      },
+      "test_17.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.28198
+      },
+      "test_18.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.27698
+      },
+      "test_19.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.38318
+      },
+      "test_2.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.79855
+      },
+      "test_20.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.70807
+      },
+      "test_21.txt": {
+        "length": 33,
+        "path": "7 10 1 5 8",
+        "time": 7.9645
+      },
+      "test_22.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.76191
+      },
+      "test_23.txt": {
+        "length": 44,
+        "path": "3 5 4 1",
+        "time": 8.06319
+      },
+      "test_24.txt": {
         "length": 24,
-        "path": "1 6 3",
-        "time": 0.917628
+        "path": "12 8 2",
+        "time": 8.11774
+      },
+      "test_25.txt": {
+        "length": 35,
+        "path": "4 8 1 9 5",
+        "time": 8.90846
+      },
+      "test_26.txt": {
+        "length": 12,
+        "path": "5 2",
+        "time": 7.87428
+      },
+      "test_27.txt": {
+        "length": 31,
+        "path": "10 1 4",
+        "time": 7.54491
+      },
+      "test_28.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.29793
+      },
+      "test_29.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.52959
+      },
+      "test_3.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.56676
+      },
+      "test_30.txt": {
+        "length": 25,
+        "path": "2 6 4",
+        "time": 7.59804
+      },
+      "test_31.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.54604
+      },
+      "test_32.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.4311
+      },
+      "test_33.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.38812
+      },
+      "test_34.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.39849
+      },
+      "test_35.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.44062
+      },
+      "test_36.txt": {
+        "length": 27,
+        "path": "7 8 12",
+        "time": 7.72709
+      },
+      "test_37.txt": {
+        "length": 31,
+        "path": "14 6 2 9 1",
+        "time": 7.40856
+      },
+      "test_38.txt": {
+        "length": 32,
+        "path": "3 5 12",
+        "time": 7.27611
+      },
+      "test_39.txt": {
+        "length": 34,
+        "path": "3 6 1",
+        "time": 7.34415
+      },
+      "test_4.txt": {
+        "length": 15,
+        "path": "3 7",
+        "time": 7.39189
+      },
+      "test_40.txt": {
+        "length": 50,
+        "path": "5 4 7 1 6 3",
+        "time": 7.75855
+      },
+      "test_41.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.77913
+      },
+      "test_42.txt": {
+        "length": 0,
+        "path": null,
+        "time": 9.53463
+      },
+      "test_43.txt": {
+        "length": 41,
+        "path": "5 7 1 3",
+        "time": 7.81984
+      },
+      "test_44.txt": {
+        "length": 27,
+        "path": "1 6 2",
+        "time": 8.7108
+      },
+      "test_45.txt": {
+        "length": 46,
+        "path": "5 1 6 7 3",
+        "time": 9.66461
+      },
+      "test_46.txt": {
+        "length": 17,
+        "path": "13 5",
+        "time": 8.74206
+      },
+      "test_47.txt": {
+        "length": 14,
+        "path": "4 11",
+        "time": 8.52776
+      },
+      "test_48.txt": {
+        "length": 47,
+        "path": "9 10 3 2",
+        "time": 7.50997
       }
     },
     "16": {
       "test_0.txt": {
-        "length": 67,
-        "path": "10 2 3 9 5",
-        "time": 0.920318
-      },
-      "test_1.txt": {
-        "length": 4,
-        "path": "10 6",
-        "time": 0.924096
-      },
-      "test_10.txt": {
-        "length": 48,
-        "path": "6 1 3 5 2 4",
-        "time": 0.914297
-      },
-      "test_11.txt": {
-        "length": 14,
-        "path": "7 5",
-        "time": 0.916932
-      },
-      "test_12.txt": {
-        "length": 26,
-        "path": "8 10 9 6",
-        "time": 0.926027
-      },
-      "test_13.txt": {
-        "length": 38,
-        "path": "3 4 1 7",
-        "time": 0.922132
-      },
-      "test_14.txt": {
-        "length": 13,
-        "path": "2 3 4",
-        "time": 0.917628
-      },
-      "test_15.txt": {
-        "length": 40,
-        "path": "4 2 5 3",
-        "time": 0.918614
-      },
-      "test_16.txt": {
-        "length": 25,
-        "path": "1 9 2",
-        "time": 0.922891
-      },
-      "test_17.txt": {
         "length": 45,
-        "path": "2 6 4 1",
-        "time": 0.91741
-      },
-      "test_18.txt": {
-        "length": 44,
-        "path": "1 3 4 5",
-        "time": 0.919724
-      },
-      "test_19.txt": {
-        "length": 41,
-        "path": "1 4 3 2 5",
-        "time": 0.921673
-      },
-      "test_2.txt": {
-        "length": 54,
-        "path": "5 6 3 2 1",
-        "time": 0.925344
-      },
-      "test_20.txt": {
-        "length": 20,
-        "path": "7 4",
-        "time": 0.927477
-      },
-      "test_21.txt": {
-        "length": 49,
-        "path": "2 5 3 6 4 7",
-        "time": 0.921745
-      },
-      "test_22.txt": {
-        "length": 16,
-        "path": "3 5",
-        "time": 0.932928
-      },
-      "test_23.txt": {
-        "length": 17,
-        "path": "3 6 7",
-        "time": 0.932009
-      },
-      "test_24.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.919553
-      },
-      "test_25.txt": {
-        "length": 30,
-        "path": "5 10 2",
-        "time": 0.935731
-      },
-      "test_26.txt": {
-        "length": 16,
-        "path": "1 4",
-        "time": 0.932306
-      },
-      "test_27.txt": {
-        "length": 26,
-        "path": "1 2 3",
-        "time": 0.920294
-      },
-      "test_28.txt": {
-        "length": 20,
-        "path": "7 6 4",
-        "time": 0.938954
-      },
-      "test_29.txt": {
-        "length": 18,
-        "path": "6 7 8",
-        "time": 0.933578
-      },
-      "test_3.txt": {
-        "length": 17,
-        "path": "1 2 3",
-        "time": 0.927145
-      },
-      "test_30.txt": {
-        "length": 29,
-        "path": "3 6 4 1",
-        "time": 0.923032
-      },
-      "test_31.txt": {
-        "length": 31,
-        "path": "4 10 3",
-        "time": 0.916238
-      },
-      "test_32.txt": {
-        "length": 19,
-        "path": "12 7 10",
-        "time": 0.918657
-      },
-      "test_33.txt": {
-        "length": 39,
-        "path": "6 7 9 5",
-        "time": 0.918232
-      },
-      "test_34.txt": {
-        "length": 19,
-        "path": "3 4 6",
-        "time": 0.918436
-      },
-      "test_35.txt": {
-        "length": 30,
-        "path": "8 9 1 4 7 6",
-        "time": 0.920223
-      },
-      "test_36.txt": {
-        "length": 31,
-        "path": "2 6 3 1",
-        "time": 0.934657
-      },
-      "test_37.txt": {
-        "length": 14,
-        "path": "1 2",
-        "time": 0.920261
-      },
-      "test_38.txt": {
-        "length": 16,
-        "path": "5 6 3 1",
-        "time": 0.919218
-      },
-      "test_39.txt": {
-        "length": 18,
-        "path": "5 2",
-        "time": 0.927499
-      },
-      "test_4.txt": {
-        "length": 51,
-        "path": "2 5 3 4 1",
-        "time": 0.927793
-      },
-      "test_40.txt": {
-        "length": 65,
-        "path": "5 6 1 2 3",
-        "time": 0.934269
-      },
-      "test_41.txt": {
-        "length": 26,
-        "path": "8 1 6",
-        "time": 0.921256
-      },
-      "test_42.txt": {
-        "length": 19,
-        "path": "11 10",
-        "time": 0.928455
-      },
-      "test_43.txt": {
-        "length": 12,
-        "path": "5 4 1",
-        "time": 0.916215
-      },
-      "test_44.txt": {
-        "length": 31,
-        "path": "6 7 3",
-        "time": 0.926904
-      },
-      "test_45.txt": {
-        "length": 20,
-        "path": "4 5 3 1 2",
-        "time": 0.92859
-      },
-      "test_46.txt": {
-        "length": 37,
-        "path": "3 7 1 8",
-        "time": 0.919655
-      },
-      "test_47.txt": {
-        "length": 18,
-        "path": "4 2",
-        "time": 0.919265
-      },
-      "test_48.txt": {
-        "length": 62,
-        "path": "7 2 8 3 6 4 1",
-        "time": 0.923175
-      },
-      "test_49.txt": {
-        "length": 14,
-        "path": "3 1 5",
-        "time": 0.917466
-      },
-      "test_5.txt": {
-        "length": 20,
-        "path": "4 1",
-        "time": 0.918058
-      },
-      "test_6.txt": {
-        "length": 39,
-        "path": "6 7 4 5 2",
-        "time": 0.921786
-      },
-      "test_7.txt": {
-        "length": 30,
-        "path": "3 7 4 9",
-        "time": 0.922024
+        "path": "8 12 3 5 9",
+        "time": 12.2244
       },
       "test_8.txt": {
-        "length": 13,
-        "path": "7 1 2",
-        "time": 0.923118
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 7.40024
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 7.07681
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 7.90051
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 9.49532
       },
       "test_9.txt": {
+        "length": 16,
+        "path": "8 5",
+        "time": 7.44644
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": null,
+        "path": null,
+        "time": 7.56693
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 8.44417
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 9.37124
+      },
+      "test_13.txt": {
+        "length": 19,
+        "path": "6 1",
+        "time": 9.39926
+      },
+      "test_14.txt": {
+        "length": 8,
+        "path": "3 5 4",
+        "time": 9.32606
+      },
+      "test_15.txt": {
+        "length": 41,
+        "path": "5 1 3 6",
+        "time": 9.0097
+      },
+      "test_16.txt": {
+        "length": 48,
+        "path": "2 7 6 8 4",
+        "time": 8.67367
+      },
+      "test_17.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.28198
+      },
+      "test_18.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.27698
+      },
+      "test_19.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.38318
+      },
+      "test_2.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.79855
+      },
+      "test_20.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.70807
+      },
+      "test_21.txt": {
+        "length": 33,
+        "path": "7 10 1 5 8",
+        "time": 7.9645
+      },
+      "test_22.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.76191
+      },
+      "test_23.txt": {
+        "length": 44,
+        "path": "3 5 4 1",
+        "time": 8.06319
+      },
+      "test_24.txt": {
         "length": 24,
-        "path": "1 6 3",
-        "time": 0.923722
+        "path": "12 8 2",
+        "time": 8.11774
+      },
+      "test_25.txt": {
+        "length": 35,
+        "path": "4 8 1 9 5",
+        "time": 8.90846
+      },
+      "test_26.txt": {
+        "length": 12,
+        "path": "5 2",
+        "time": 7.87428
+      },
+      "test_27.txt": {
+        "length": 31,
+        "path": "10 1 4",
+        "time": 7.54491
+      },
+      "test_28.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.29793
+      },
+      "test_29.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.52959
+      },
+      "test_3.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.56676
+      },
+      "test_30.txt": {
+        "length": 25,
+        "path": "2 6 4",
+        "time": 7.59804
+      },
+      "test_31.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.54604
+      },
+      "test_32.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.4311
+      },
+      "test_33.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.38812
+      },
+      "test_34.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.39849
+      },
+      "test_35.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.44062
+      },
+      "test_36.txt": {
+        "length": 27,
+        "path": "7 8 12",
+        "time": 7.72709
+      },
+      "test_37.txt": {
+        "length": 31,
+        "path": "14 6 2 9 1",
+        "time": 7.40856
+      },
+      "test_38.txt": {
+        "length": 32,
+        "path": "3 5 12",
+        "time": 7.27611
+      },
+      "test_39.txt": {
+        "length": 34,
+        "path": "3 6 1",
+        "time": 7.34415
+      },
+      "test_4.txt": {
+        "length": 15,
+        "path": "3 7",
+        "time": 7.39189
+      },
+      "test_40.txt": {
+        "length": 50,
+        "path": "5 4 7 1 6 3",
+        "time": 7.75855
+      },
+      "test_41.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.77913
+      },
+      "test_42.txt": {
+        "length": 0,
+        "path": null,
+        "time": 9.53463
+      },
+      "test_43.txt": {
+        "length": 41,
+        "path": "5 7 1 3",
+        "time": 7.81984
+      },
+      "test_44.txt": {
+        "length": 27,
+        "path": "1 6 2",
+        "time": 8.7108
+      },
+      "test_45.txt": {
+        "length": 46,
+        "path": "5 1 6 7 3",
+        "time": 9.66461
+      },
+      "test_46.txt": {
+        "length": 17,
+        "path": "13 5",
+        "time": 8.74206
+      },
+      "test_47.txt": {
+        "length": 14,
+        "path": "4 11",
+        "time": 8.52776
+      },
+      "test_48.txt": {
+        "length": 47,
+        "path": "9 10 3 2",
+        "time": 7.50997
+      }
+    },
+    "17": {
+      "test_0.txt": {
+        "length": 45,
+        "path": "8 12 3 5 9",
+        "time": 12.2244
+      },
+      "test_8.txt": {
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 7.36084
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 7.07681
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 7.90051
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 9.49532
+      },
+      "test_9.txt": {
+        "length": 16,
+        "path": "8 5",
+        "time": 6.06802
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 6.37111
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 8.44417
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 9.37124
+      },
+      "test_13.txt": {
+        "length": 19,
+        "path": "6 1",
+        "time": 9.39926
+      },
+      "test_14.txt": {
+        "length": 8,
+        "path": "3 5 4",
+        "time": 9.32606
+      },
+      "test_15.txt": {
+        "length": 41,
+        "path": "5 1 3 6",
+        "time": 9.0097
+      },
+      "test_16.txt": {
+        "length": 48,
+        "path": "2 7 6 8 4",
+        "time": 8.67367
+      },
+      "test_17.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.28198
+      },
+      "test_18.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.27698
+      },
+      "test_19.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.38318
+      },
+      "test_2.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.79855
+      },
+      "test_20.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.70807
+      },
+      "test_21.txt": {
+        "length": 33,
+        "path": "7 10 1 5 8",
+        "time": 7.9645
+      },
+      "test_22.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.76191
+      },
+      "test_23.txt": {
+        "length": 44,
+        "path": "3 5 4 1",
+        "time": 8.06319
+      },
+      "test_24.txt": {
+        "length": 24,
+        "path": "12 8 2",
+        "time": 8.11774
+      },
+      "test_25.txt": {
+        "length": 35,
+        "path": "4 8 1 9 5",
+        "time": 8.90846
+      },
+      "test_26.txt": {
+        "length": 12,
+        "path": "5 2",
+        "time": 7.87428
+      },
+      "test_27.txt": {
+        "length": 31,
+        "path": "10 1 4",
+        "time": 7.54491
+      },
+      "test_28.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.29793
+      },
+      "test_29.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.52959
+      },
+      "test_3.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.56676
+      },
+      "test_30.txt": {
+        "length": 25,
+        "path": "2 6 4",
+        "time": 7.59804
+      },
+      "test_31.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.54604
+      },
+      "test_32.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.4311
+      },
+      "test_33.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.38812
+      },
+      "test_34.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.39849
+      },
+      "test_35.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.44062
+      },
+      "test_36.txt": {
+        "length": 27,
+        "path": "7 8 12",
+        "time": 7.72709
+      },
+      "test_37.txt": {
+        "length": 31,
+        "path": "14 6 2 9 1",
+        "time": 7.40856
+      },
+      "test_38.txt": {
+        "length": 32,
+        "path": "3 5 12",
+        "time": 7.27611
+      },
+      "test_39.txt": {
+        "length": 34,
+        "path": "3 6 1",
+        "time": 7.34415
+      },
+      "test_4.txt": {
+        "length": 15,
+        "path": "3 7",
+        "time": 7.39189
+      },
+      "test_40.txt": {
+        "length": 50,
+        "path": "5 4 7 1 6 3",
+        "time": 7.75855
+      },
+      "test_41.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.77913
+      },
+      "test_42.txt": {
+        "length": 0,
+        "path": null,
+        "time": 9.53463
+      },
+      "test_43.txt": {
+        "length": 41,
+        "path": "5 7 1 3",
+        "time": 7.81984
+      },
+      "test_44.txt": {
+        "length": 27,
+        "path": "1 6 2",
+        "time": 8.7108
+      },
+      "test_45.txt": {
+        "length": 46,
+        "path": "5 1 6 7 3",
+        "time": 9.66461
+      },
+      "test_46.txt": {
+        "length": 17,
+        "path": "13 5",
+        "time": 8.74206
+      },
+      "test_47.txt": {
+        "length": 14,
+        "path": "4 11",
+        "time": 8.52776
+      },
+      "test_48.txt": {
+        "length": 47,
+        "path": "9 10 3 2",
+        "time": 7.50997
+      }
+    },
+    "18": {
+      "test_0.txt": {
+        "length": 45,
+        "path": "8 12 3 5 9",
+        "time": 12.2244
+      },
+      "test_8.txt": {
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 6.31186
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 7.07681
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 7.90051
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 9.49532
+      },
+      "test_9.txt": {
+        "length": 16,
+        "path": "8 5",
+        "time": 6.23981
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 6.37111
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 8.44417
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 9.37124
+      },
+      "test_13.txt": {
+        "length": 19,
+        "path": "6 1",
+        "time": 9.39926
+      },
+      "test_14.txt": {
+        "length": 8,
+        "path": "3 5 4",
+        "time": 9.32606
+      },
+      "test_15.txt": {
+        "length": 41,
+        "path": "5 1 3 6",
+        "time": 9.0097
+      },
+      "test_16.txt": {
+        "length": 48,
+        "path": "2 7 6 8 4",
+        "time": 8.67367
+      },
+      "test_17.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.28198
+      },
+      "test_18.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.27698
+      },
+      "test_19.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.38318
+      },
+      "test_2.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.79855
+      },
+      "test_20.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.70807
+      },
+      "test_21.txt": {
+        "length": 33,
+        "path": "7 10 1 5 8",
+        "time": 7.9645
+      },
+      "test_22.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.76191
+      },
+      "test_23.txt": {
+        "length": 44,
+        "path": "3 5 4 1",
+        "time": 8.06319
+      },
+      "test_24.txt": {
+        "length": 24,
+        "path": "12 8 2",
+        "time": 8.11774
+      },
+      "test_25.txt": {
+        "length": 35,
+        "path": "4 8 1 9 5",
+        "time": 8.90846
+      },
+      "test_26.txt": {
+        "length": 12,
+        "path": "5 2",
+        "time": 7.87428
+      },
+      "test_27.txt": {
+        "length": 31,
+        "path": "10 1 4",
+        "time": 7.54491
+      },
+      "test_28.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.29793
+      },
+      "test_29.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.52959
+      },
+      "test_3.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.56676
+      },
+      "test_30.txt": {
+        "length": 25,
+        "path": "2 6 4",
+        "time": 7.59804
+      },
+      "test_31.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.54604
+      },
+      "test_32.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.4311
+      },
+      "test_33.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.38812
+      },
+      "test_34.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.39849
+      },
+      "test_35.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.44062
+      },
+      "test_36.txt": {
+        "length": 27,
+        "path": "7 8 12",
+        "time": 7.72709
+      },
+      "test_37.txt": {
+        "length": 31,
+        "path": "14 6 2 9 1",
+        "time": 7.40856
+      },
+      "test_38.txt": {
+        "length": 32,
+        "path": "3 5 12",
+        "time": 7.27611
+      },
+      "test_39.txt": {
+        "length": 34,
+        "path": "3 6 1",
+        "time": 7.34415
+      },
+      "test_4.txt": {
+        "length": 15,
+        "path": "3 7",
+        "time": 7.39189
+      },
+      "test_40.txt": {
+        "length": 50,
+        "path": "5 4 7 1 6 3",
+        "time": 7.75855
+      },
+      "test_41.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.77913
+      },
+      "test_42.txt": {
+        "length": 0,
+        "path": null,
+        "time": 9.53463
+      },
+      "test_43.txt": {
+        "length": 41,
+        "path": "5 7 1 3",
+        "time": 7.81984
+      },
+      "test_44.txt": {
+        "length": 27,
+        "path": "1 6 2",
+        "time": 8.7108
+      },
+      "test_45.txt": {
+        "length": 46,
+        "path": "5 1 6 7 3",
+        "time": 9.66461
+      },
+      "test_46.txt": {
+        "length": 17,
+        "path": "13 5",
+        "time": 8.74206
+      },
+      "test_47.txt": {
+        "length": 14,
+        "path": "4 11",
+        "time": 8.52776
+      },
+      "test_48.txt": {
+        "length": 47,
+        "path": "9 10 3 2",
+        "time": 7.50997
+      }
+    },
+    "19": {
+      "test_0.txt": {
+        "length": 45,
+        "path": "8 12 3 5 9",
+        "time": 12.2244
+      },
+      "test_8.txt": {
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 5.22126
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 7.07681
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 7.90051
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 9.49532
+      },
+      "test_9.txt": {
+        "length": 16,
+        "path": "8 5",
+        "time": 5.06682
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 6.37111
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 8.44417
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 9.37124
+      },
+      "test_13.txt": {
+        "length": 19,
+        "path": "6 1",
+        "time": 9.39926
+      },
+      "test_14.txt": {
+        "length": 8,
+        "path": "3 5 4",
+        "time": 9.32606
+      },
+      "test_15.txt": {
+        "length": 41,
+        "path": "5 1 3 6",
+        "time": 9.0097
+      },
+      "test_16.txt": {
+        "length": 48,
+        "path": "2 7 6 8 4",
+        "time": 8.67367
+      },
+      "test_17.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.28198
+      },
+      "test_18.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.27698
+      },
+      "test_19.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.38318
+      },
+      "test_2.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.79855
+      },
+      "test_20.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.70807
+      },
+      "test_21.txt": {
+        "length": 33,
+        "path": "7 10 1 5 8",
+        "time": 7.9645
+      },
+      "test_22.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.76191
+      },
+      "test_23.txt": {
+        "length": 44,
+        "path": "3 5 4 1",
+        "time": 8.06319
+      },
+      "test_24.txt": {
+        "length": 24,
+        "path": "12 8 2",
+        "time": 8.11774
+      },
+      "test_25.txt": {
+        "length": 35,
+        "path": "4 8 1 9 5",
+        "time": 8.90846
+      },
+      "test_26.txt": {
+        "length": 12,
+        "path": "5 2",
+        "time": 7.87428
+      },
+      "test_27.txt": {
+        "length": 31,
+        "path": "10 1 4",
+        "time": 7.54491
+      },
+      "test_28.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.29793
+      },
+      "test_29.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.52959
+      },
+      "test_3.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.56676
+      },
+      "test_30.txt": {
+        "length": 25,
+        "path": "2 6 4",
+        "time": 7.59804
+      },
+      "test_31.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.54604
+      },
+      "test_32.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.4311
+      },
+      "test_33.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.38812
+      },
+      "test_34.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.39849
+      },
+      "test_35.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.44062
+      },
+      "test_36.txt": {
+        "length": 27,
+        "path": "7 8 12",
+        "time": 7.72709
+      },
+      "test_37.txt": {
+        "length": 31,
+        "path": "14 6 2 9 1",
+        "time": 7.40856
+      },
+      "test_38.txt": {
+        "length": 32,
+        "path": "3 5 12",
+        "time": 7.27611
+      },
+      "test_39.txt": {
+        "length": 34,
+        "path": "3 6 1",
+        "time": 7.34415
+      },
+      "test_4.txt": {
+        "length": 15,
+        "path": "3 7",
+        "time": 7.39189
+      },
+      "test_40.txt": {
+        "length": 50,
+        "path": "5 4 7 1 6 3",
+        "time": 7.75855
+      },
+      "test_41.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.77913
+      },
+      "test_42.txt": {
+        "length": 0,
+        "path": null,
+        "time": 9.53463
+      },
+      "test_43.txt": {
+        "length": 41,
+        "path": "5 7 1 3",
+        "time": 7.81984
+      },
+      "test_44.txt": {
+        "length": 27,
+        "path": "1 6 2",
+        "time": 8.7108
+      },
+      "test_45.txt": {
+        "length": 46,
+        "path": "5 1 6 7 3",
+        "time": 9.66461
+      },
+      "test_46.txt": {
+        "length": 17,
+        "path": "13 5",
+        "time": 8.74206
+      },
+      "test_47.txt": {
+        "length": 14,
+        "path": "4 11",
+        "time": 8.52776
+      },
+      "test_48.txt": {
+        "length": 47,
+        "path": "9 10 3 2",
+        "time": 7.50997
+      }
+    },
+    "20": {
+      "test_0.txt": {
+        "length": 45,
+        "path": "8 12 3 5 9",
+        "time": 12.2244
+      },
+      "test_8.txt": {
+        "length": 31,
+        "path": "9 14 4 3 13",
+        "time": 5.22126
+      },
+      "test_6.txt": {
+        "length": 45,
+        "path": "2 6 3 1",
+        "time": 7.07681
+      },
+      "test_1.txt": {
+        "length": 38,
+        "path": "9 11 8 2 3",
+        "time": 10.6715
+      },
+      "test_5.txt": {
+        "length": 19,
+        "path": "11 9",
+        "time": 7.90051
+      },
+      "test_49.txt": {
+        "length": 16,
+        "path": "5 4",
+        "time": 9.49532
+      },
+      "test_9.txt": {
+        "length": 16,
+        "path": "8 5",
+        "time": 4.9816
+      },
+      "test_10.txt": {
+        "length": 28,
+        "path": "10 4 1",
+        "time": 9.75247
+      },
+      "test_7.txt": {
+        "length": 37,
+        "path": "1 5 6 3",
+        "time": 6.37111
+      },
+      "test_11.txt": {
+        "length": 40,
+        "path": "4 11 7 14",
+        "time": 8.44417
+      },
+      "test_12.txt": {
+        "length": 19,
+        "path": "2 1",
+        "time": 9.37124
+      },
+      "test_13.txt": {
+        "length": 19,
+        "path": "6 1",
+        "time": 9.39926
+      },
+      "test_14.txt": {
+        "length": 8,
+        "path": "3 5 4",
+        "time": 9.32606
+      },
+      "test_15.txt": {
+        "length": 41,
+        "path": "5 1 3 6",
+        "time": 9.0097
+      },
+      "test_16.txt": {
+        "length": 48,
+        "path": "2 7 6 8 4",
+        "time": 8.67367
+      },
+      "test_17.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.28198
+      },
+      "test_18.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.27698
+      },
+      "test_19.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.38318
+      },
+      "test_2.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.79855
+      },
+      "test_20.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.70807
+      },
+      "test_21.txt": {
+        "length": 33,
+        "path": "7 10 1 5 8",
+        "time": 7.9645
+      },
+      "test_22.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.76191
+      },
+      "test_23.txt": {
+        "length": 44,
+        "path": "3 5 4 1",
+        "time": 8.06319
+      },
+      "test_24.txt": {
+        "length": 24,
+        "path": "12 8 2",
+        "time": 8.11774
+      },
+      "test_25.txt": {
+        "length": 35,
+        "path": "4 8 1 9 5",
+        "time": 8.90846
+      },
+      "test_26.txt": {
+        "length": 12,
+        "path": "5 2",
+        "time": 7.87428
+      },
+      "test_27.txt": {
+        "length": 31,
+        "path": "10 1 4",
+        "time": 7.54491
+      },
+      "test_28.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.29793
+      },
+      "test_29.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.52959
+      },
+      "test_3.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.56676
+      },
+      "test_30.txt": {
+        "length": 25,
+        "path": "2 6 4",
+        "time": 7.59804
+      },
+      "test_31.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.54604
+      },
+      "test_32.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.4311
+      },
+      "test_33.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.38812
+      },
+      "test_34.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.39849
+      },
+      "test_35.txt": {
+        "length": 0,
+        "path": null,
+        "time": 7.44062
+      },
+      "test_36.txt": {
+        "length": 27,
+        "path": "7 8 12",
+        "time": 7.72709
+      },
+      "test_37.txt": {
+        "length": 31,
+        "path": "14 6 2 9 1",
+        "time": 7.40856
+      },
+      "test_38.txt": {
+        "length": 32,
+        "path": "3 5 12",
+        "time": 7.27611
+      },
+      "test_39.txt": {
+        "length": 34,
+        "path": "3 6 1",
+        "time": 7.34415
+      },
+      "test_4.txt": {
+        "length": 15,
+        "path": "3 7",
+        "time": 7.39189
+      },
+      "test_40.txt": {
+        "length": 50,
+        "path": "5 4 7 1 6 3",
+        "time": 7.75855
+      },
+      "test_41.txt": {
+        "length": 0,
+        "path": null,
+        "time": 8.77913
+      },
+      "test_42.txt": {
+        "length": 0,
+        "path": null,
+        "time": 9.53463
+      },
+      "test_43.txt": {
+        "length": 41,
+        "path": "5 7 1 3",
+        "time": 7.81984
+      },
+      "test_44.txt": {
+        "length": 27,
+        "path": "1 6 2",
+        "time": 8.7108
+      },
+      "test_45.txt": {
+        "length": 46,
+        "path": "5 1 6 7 3",
+        "time": 9.66461
+      },
+      "test_46.txt": {
+        "length": 17,
+        "path": "13 5",
+        "time": 8.74206
+      },
+      "test_47.txt": {
+        "length": 14,
+        "path": "4 11",
+        "time": 8.52776
+      },
+      "test_48.txt": {
+        "length": 47,
+        "path": "9 10 3 2",
+        "time": 7.50997
       }
     }
   },
   "analysis": {
     "per_thread": {
-      "1": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
+      "5": {
+        "avg_percentage": 87.29166666666669,
+        "best_count": 43,
         "total_tests": 50
       },
-      "2": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+      "1": {
+        "avg_percentage": 66.66666666666667,
+        "best_count": 2,
+        "total_tests": 3
       },
       "3": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+        "avg_percentage": 80.0,
+        "best_count": 4,
+        "total_tests": 5
       },
-      "4": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
-      },
-      "5": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+      "2": {
+        "avg_percentage": 83.33333333333333,
+        "best_count": 5,
+        "total_tests": 6
       },
       "6": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+        "avg_percentage": 100.0,
+        "best_count": 1,
+        "total_tests": 1
       },
-      "7": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+      "4": {
+        "avg_percentage": 83.33333333333333,
+        "best_count": 5,
+        "total_tests": 6
       },
       "8": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+        "avg_percentage": 100.0,
+        "best_count": 7,
+        "total_tests": 7
       },
       "9": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+        "avg_percentage": 85.71428571428571,
+        "best_count": 6,
+        "total_tests": 7
+      },
+      "7": {
+        "avg_percentage": 85.71428571428571,
+        "best_count": 6,
+        "total_tests": 7
       },
       "10": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+        "avg_percentage": 100.0,
+        "best_count": 10,
+        "total_tests": 10
       },
       "11": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+        "avg_percentage": 100.0,
+        "best_count": 11,
+        "total_tests": 11
       },
       "12": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
-      },
-      "13": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+        "avg_percentage": 100.0,
+        "best_count": 11,
+        "total_tests": 11
       },
       "14": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
-        "total_tests": 50
+        "avg_percentage": 91.66666666666667,
+        "best_count": 11,
+        "total_tests": 12
+      },
+      "13": {
+        "avg_percentage": 100.0,
+        "best_count": 13,
+        "total_tests": 13
       },
       "15": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
+        "avg_percentage": 65.2,
+        "best_count": 32,
         "total_tests": 50
       },
       "16": {
-        "avg_accuracy": 100.0,
-        "optimal_count": 50,
+        "avg_percentage": 66.53061224489795,
+        "best_count": 32,
+        "total_tests": 50
+      },
+      "17": {
+        "avg_percentage": 67.2,
+        "best_count": 33,
+        "total_tests": 50
+      },
+      "18": {
+        "avg_percentage": 67.2,
+        "best_count": 33,
+        "total_tests": 50
+      },
+      "19": {
+        "avg_percentage": 67.2,
+        "best_count": 33,
+        "total_tests": 50
+      },
+      "20": {
+        "avg_percentage": 67.2,
+        "best_count": 33,
         "total_tests": 50
       }
     },
     "per_file": {
       "test_0.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
+          4,
           8,
           9,
+          7,
           10,
           11,
           12,
-          13,
           14,
+          13,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67,
-          67
-        ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_1.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4
-        ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_10.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48,
-          48
-        ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_11.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14
-        ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_12.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26
-        ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_13.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38,
-          38
-        ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_14.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13
-        ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_15.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40,
-          40
-        ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_16.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25,
-          25
-        ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_17.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          45,
+          0,
           45,
           45,
           45,
@@ -4677,64 +2450,8 @@
           45,
           45
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
-        ]
-      },
-      "test_18.txt": {
-        "threads": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "lengths": [
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44,
-          44
-        ],
-        "accuracies": [
-          100.0,
+        "percentages": [
+          0.0,
           100.0,
           100.0,
           100.0,
@@ -4752,35 +2469,266 @@
           100.0
         ]
       },
-      "test_19.txt": {
+      "test_1.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
           8,
           9,
+          7,
           10,
           11,
           12,
-          13,
           14,
+          13,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
-          41,
+          0,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38,
+          38
+        ],
+        "percentages": [
+          0.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "test_10.txt": {
+        "threads": [
+          5,
+          10,
+          11,
+          12,
+          14,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
+          28,
+          28,
+          28,
+          28,
+          28,
+          28,
+          28,
+          28,
+          28,
+          28,
+          28,
+          28
+        ],
+        "percentages": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "test_11.txt": {
+        "threads": [
+          5,
+          10,
+          11,
+          12,
+          14,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40
+        ],
+        "percentages": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "test_12.txt": {
+        "threads": [
+          5,
+          11,
+          12,
+          14,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
+          0,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19
+        ],
+        "percentages": [
+          0.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "test_13.txt": {
+        "threads": [
+          5,
+          14,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19
+        ],
+        "percentages": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "test_14.txt": {
+        "threads": [
+          5,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "percentages": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "test_15.txt": {
+        "threads": [
+          5,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
           41,
           41,
           41,
@@ -4789,16 +2737,7 @@
           41,
           41
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -4806,279 +2745,260 @@
           100.0,
           100.0,
           100.0
+        ]
+      },
+      "test_16.txt": {
+        "threads": [
+          5,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
+          31,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ],
+        "percentages": [
+          64.58333333333334,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "test_17.txt": {
+        "threads": [
+          5,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
+          48,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "percentages": [
+          100.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "test_18.txt": {
+        "threads": [
+          5,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "percentages": [
+          100.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "test_19.txt": {
+        "threads": [
+          5,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lengths": [
+          48,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "percentages": [
+          100.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_2.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54,
-          54
+          33,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_20.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
-        ],
-        "lengths": [
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
+          16,
+          17,
+          18,
+          19,
           20
         ],
-        "accuracies": [
+        "lengths": [
+          36,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_21.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49,
-          49
+          55,
+          33,
+          33,
+          33,
+          33,
+          33,
+          33
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0
         ]
       },
       "test_22.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16
+          26,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_23.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17
+          44,
+          44,
+          44,
+          44,
+          44,
+          44,
+          44
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -5090,51 +3010,24 @@
       },
       "test_24.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14
+          24,
+          24,
+          24,
+          24,
+          24,
+          24,
+          24
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -5146,51 +3039,24 @@
       },
       "test_25.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30
+          35,
+          35,
+          35,
+          35,
+          35,
+          35,
+          35
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -5202,51 +3068,24 @@
       },
       "test_26.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -5258,51 +3097,24 @@
       },
       "test_27.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -5314,220 +3126,112 @@
       },
       "test_28.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
-        ],
-        "lengths": [
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
+          16,
+          17,
+          18,
+          19,
           20
         ],
-        "accuracies": [
+        "lengths": [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_29.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_3.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17,
-          17
+          37,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_30.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29,
-          29
+          0,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
+          0.0,
           100.0,
           100.0,
           100.0,
@@ -5538,331 +3242,169 @@
       },
       "test_31.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31
+          20,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_32.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19
+          21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_33.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39
+          37,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_34.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
           19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_35.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30
+          37,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_36.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31
+          27,
+          27,
+          27,
+          27,
+          27,
+          27,
+          27
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -5874,51 +3416,24 @@
       },
       "test_37.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -5930,52 +3445,25 @@
       },
       "test_38.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16,
-          16
+          0,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
+          0.0,
           100.0,
           100.0,
           100.0,
@@ -5986,51 +3474,24 @@
       },
       "test_39.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18
+          34,
+          34,
+          34,
+          34,
+          34,
+          34,
+          34
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6042,51 +3503,24 @@
       },
       "test_4.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51,
-          51
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6098,51 +3532,24 @@
       },
       "test_40.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65,
-          65
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6154,163 +3561,82 @@
       },
       "test_41.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26,
-          26
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_42.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19,
-          19
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
         ]
       },
       "test_43.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12,
-          12
+          41,
+          41,
+          41,
+          41,
+          41,
+          41,
+          41
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6322,51 +3648,24 @@
       },
       "test_44.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31,
-          31
+          27,
+          27,
+          27,
+          27,
+          27,
+          27,
+          27
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6378,51 +3677,24 @@
       },
       "test_45.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
-        ],
-        "lengths": [
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
+          16,
+          17,
+          18,
+          19,
           20
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "lengths": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ],
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6434,51 +3706,24 @@
       },
       "test_46.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37,
-          37
+          17,
+          17,
+          17,
+          17,
+          17,
+          17,
+          17
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6490,49 +3735,28 @@
       },
       "test_47.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
+          3,
+          2,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18,
-          18
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14
         ],
-        "accuracies": [
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6546,52 +3770,34 @@
       },
       "test_48.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
+          3,
+          2,
+          4,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62,
-          62
+          47,
+          47,
+          47,
+          0,
+          47,
+          47,
+          47,
+          47,
+          47,
+          47
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
           100.0,
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+          0.0,
           100.0,
           100.0,
           100.0,
@@ -6602,42 +3808,51 @@
       },
       "test_49.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
+          1,
+          3,
+          2,
+          4,
           8,
           9,
+          7,
           10,
           11,
           12,
-          13,
           14,
+          13,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14,
-          14
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
         ],
-        "accuracies": [
+        "percentages": [
+          100.0,
+          100.0,
+          100.0,
           100.0,
           100.0,
           100.0,
@@ -6658,42 +3873,42 @@
       },
       "test_5.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
+          4,
           8,
           9,
+          7,
           10,
           11,
           12,
-          13,
           14,
+          13,
           15,
-          16
-        ],
-        "lengths": [
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
-          20,
+          16,
+          17,
+          18,
+          19,
           20
         ],
-        "accuracies": [
+        "lengths": [
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19,
+          19
+        ],
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6714,47 +3929,53 @@
       },
       "test_6.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
+          1,
+          3,
+          2,
           8,
           9,
+          7,
           10,
           11,
           12,
-          13,
           14,
+          13,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39,
-          39
+          45,
+          0,
+          0,
+          0,
+          45,
+          0,
+          0,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45,
+          45
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
+          0.0,
+          0.0,
+          0.0,
           100.0,
-          100.0,
-          100.0,
-          100.0,
+          0.0,
+          0.0,
           100.0,
           100.0,
           100.0,
@@ -6770,42 +3991,34 @@
       },
       "test_7.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
-          8,
-          9,
+          4,
           10,
           11,
           12,
-          13,
           14,
+          13,
           15,
-          16
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30,
-          30
+          37,
+          37,
+          37,
+          37,
+          37,
+          37,
+          37,
+          0,
+          37,
+          37,
+          37,
+          37
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6813,11 +4026,7 @@
           100.0,
           100.0,
           100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
-          100.0,
+          0.0,
           100.0,
           100.0,
           100.0,
@@ -6826,42 +4035,42 @@
       },
       "test_8.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
-          6,
-          7,
+          2,
           8,
           9,
+          7,
           10,
           11,
           12,
-          13,
           14,
+          13,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
         ],
-        "accuracies": [
+        "percentages": [
           100.0,
           100.0,
           100.0,
@@ -6882,42 +4091,51 @@
       },
       "test_9.txt": {
         "threads": [
-          1,
-          2,
-          3,
-          4,
           5,
+          1,
+          3,
+          2,
           6,
-          7,
+          4,
           8,
           9,
+          7,
           10,
           11,
           12,
-          13,
           14,
+          13,
           15,
-          16
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "lengths": [
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24,
-          24
+          0,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          0,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
         ],
-        "accuracies": [
+        "percentages": [
+          0.0,
           100.0,
           100.0,
           100.0,
@@ -6927,6 +4145,9 @@
           100.0,
           100.0,
           100.0,
+          100.0,
+          100.0,
+          0.0,
           100.0,
           100.0,
           100.0,
@@ -6936,6 +4157,58 @@
           100.0
         ]
       }
+    },
+    "best_lengths": {
+      "test_4.txt": 15,
+      "test_8.txt": 31,
+      "test_33.txt": 37,
+      "test_35.txt": 37,
+      "test_27.txt": 31,
+      "test_44.txt": 27,
+      "test_43.txt": 41,
+      "test_2.txt": 33,
+      "test_25.txt": 35,
+      "test_31.txt": 20,
+      "test_24.txt": 24,
+      "test_13.txt": 19,
+      "test_30.txt": 25,
+      "test_42.txt": 8,
+      "test_45.txt": 46,
+      "test_47.txt": 14,
+      "test_0.txt": 45,
+      "test_14.txt": 8,
+      "test_18.txt": 20,
+      "test_11.txt": 40,
+      "test_23.txt": 44,
+      "test_3.txt": 37,
+      "test_15.txt": 41,
+      "test_41.txt": 15,
+      "test_9.txt": 16,
+      "test_21.txt": 55,
+      "test_12.txt": 19,
+      "test_37.txt": 31,
+      "test_20.txt": 36,
+      "test_39.txt": 34,
+      "test_38.txt": 32,
+      "test_48.txt": 47,
+      "test_26.txt": 12,
+      "test_19.txt": 48,
+      "test_6.txt": 45,
+      "test_17.txt": 48,
+      "test_16.txt": 48,
+      "test_40.txt": 50,
+      "test_46.txt": 17,
+      "test_32.txt": 21,
+      "test_49.txt": 16,
+      "test_28.txt": 7,
+      "test_34.txt": 19,
+      "test_29.txt": 17,
+      "test_5.txt": 19,
+      "test_7.txt": 37,
+      "test_36.txt": 27,
+      "test_10.txt": 28,
+      "test_1.txt": 38,
+      "test_22.txt": 26
     }
   }
 }

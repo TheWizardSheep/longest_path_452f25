@@ -1,0 +1,350 @@
+===============================
+File: test_cases/test_20.txt
+Elapsed: .578157262 seconds
+Output:
+36
+7 9 3
+
+===============================
+File: test_cases/test_30.txt
+Elapsed: .578533536 seconds
+Output:
+25
+2 6 4
+
+===============================
+File: test_cases/test_39.txt
+Elapsed: .581187852 seconds
+Output:
+34
+3 6 1
+
+===============================
+File: test_cases/test_4.txt
+Elapsed: .670816111 seconds
+Output:
+15
+3 7
+
+===============================
+File: test_cases/test_14.txt
+Elapsed: .785095300 seconds
+Output:
+8
+3 5 4
+
+===============================
+File: test_cases/test_41.txt
+Elapsed: .872887760 seconds
+Output:
+15
+7 3
+
+===============================
+File: test_cases/test_43.txt
+Elapsed: .871954354 seconds
+Output:
+41
+5 7 1 3
+
+===============================
+File: test_cases/test_49.txt
+Elapsed: .871866723 seconds
+Output:
+16
+5 4
+
+===============================
+File: test_cases/test_15.txt
+Elapsed: .886972334 seconds
+Output:
+41
+5 1 3 6
+
+===============================
+File: test_cases/test_44.txt
+Elapsed: .971629912 seconds
+Output:
+27
+1 6 2
+
+===============================
+File: test_cases/test_13.txt
+Elapsed: .978744398 seconds
+Output:
+19
+6 1
+
+===============================
+File: test_cases/test_6.txt
+Elapsed: .982606840 seconds
+Output:
+45
+2 6 3 1
+
+===============================
+File: test_cases/test_40.txt
+Elapsed: 1.072384314 seconds
+Output:
+50
+5 4 7 1 6 3
+
+===============================
+File: test_cases/test_23.txt
+Elapsed: 1.079545686 seconds
+Output:
+44
+3 5 4 1
+
+===============================
+File: test_cases/test_31.txt
+Elapsed: 1.079797978 seconds
+Output:
+20
+4 5 1 2
+
+===============================
+File: test_cases/test_45.txt
+Elapsed: 1.177268939 seconds
+Output:
+46
+5 1 6 7 3
+
+===============================
+File: test_cases/test_19.txt
+Elapsed: 1.778871091 seconds
+Output:
+48
+6 5 4 2
+
+===============================
+File: test_cases/test_32.txt
+Elapsed: 2.074649360 seconds
+Output:
+21
+9 8 1
+
+===============================
+File: test_cases/test_16.txt
+Elapsed: 2.177146523 seconds
+Output:
+31
+5 10 1 11 7 9
+
+===============================
+File: test_cases/test_26.txt
+Elapsed: 2.477230442 seconds
+Output:
+12
+5 2
+
+===============================
+File: test_cases/test_12.txt
+Elapsed: 8.188854562 seconds
+Output:
+19
+2 1
+
+===============================
+File: test_cases/test_1.txt
+Elapsed: 8.581281767 seconds
+Output:
+38
+9 11 8 2 3
+
+===============================
+File: test_cases/test_18.txt
+Elapsed: 8.583013052 seconds
+Output:
+20
+1 4 5
+
+===============================
+File: test_cases/test_10.txt
+Elapsed: 8.593896498 seconds
+Output:
+28
+10 4 1
+
+===============================
+File: test_cases/test_48.txt
+Elapsed: 9.878065195 seconds
+Output:
+47
+9 10 3 2
+
+===============================
+File: test_cases/test_9.txt
+Elapsed: 10.279571367 seconds
+Output:
+16
+8 5
+
+===============================
+File: test_cases/test_28.txt
+Elapsed: 11.877593598 seconds
+Output:
+7
+1 9
+
+===============================
+File: test_cases/test_29.txt
+Elapsed: 12.086445189 seconds
+Output:
+17
+8 2
+
+===============================
+File: test_cases/test_7.txt
+Elapsed: 16.074979896 seconds
+Output:
+37
+1 5 6 3
+
+===============================
+File: test_cases/test_35.txt
+Elapsed: 63.982221829 seconds
+Output:
+37
+3 6 8
+
+===============================
+File: test_cases/test_34.txt
+Elapsed: 64.684708720 seconds
+Output:
+19
+4 1
+
+===============================
+File: test_cases/test_17.txt
+Elapsed: 70.978548328 seconds
+Output:
+48
+2 7 6 8 4
+
+===============================
+File: test_cases/test_47.txt
+Elapsed: 75.488762075 seconds
+Output:
+14
+4 11
+
+===============================
+File: test_cases/test_36.txt
+Elapsed: 477.785537120 seconds
+Output:
+27
+7 8 12
+
+===============================
+File: test_cases/test_25.txt
+Elapsed: 482.687974729 seconds
+Output:
+35
+4 8 1 9 5
+
+===============================
+File: test_cases/test_5.txt
+Elapsed: 508.771006939 seconds
+Output:
+19
+11 9
+
+===============================
+File: test_cases/test_42.txt
+Elapsed: 545.088647985 seconds
+Output:
+8
+2 3 5
+
+===============================
+File: test_cases/test_24.txt
+Elapsed: 558.994155694 seconds
+Output:
+24
+12 8 2
+
+===============================
+File: test_cases/test_21.txt
+Elapsed: 691.377450536 seconds
+Output:
+55
+9 7 10 1 5 8 2 6 11
+
+===============================
+File: test_cases/test_3.txt
+Elapsed: 3864.099238915 seconds
+Output:
+37
+2 1 9 7 5
+
+===============================
+File: test_cases/test_27.txt
+Elapsed: 4682.504105613 seconds
+Output:
+31
+10 1 4
+
+===============================
+File: test_cases/test_37.txt
+Elapsed: 4830.992701959 seconds
+Output:
+31
+14 6 2 9 1
+
+===============================
+File: test_cases/test_22.txt
+Elapsed: 4833.587866454 seconds
+Output:
+26
+8 3 9
+
+===============================
+File: test_cases/test_33.txt
+Elapsed: 4835.799896302 seconds
+Output:
+37
+4 2 6 7 8
+
+===============================
+File: test_cases/test_38.txt
+Elapsed: 5381.609689686 seconds
+Output:
+32
+3 5 12
+
+===============================
+File: test_cases/test_8.txt
+Elapsed: 24298.597332411 seconds
+Output:
+31
+9 14 4 3 13
+
+===============================
+File: test_cases/test_0.txt
+Elapsed: 24806.032202131 seconds
+Output:
+45
+8 12 3 5 9
+
+===============================
+File: test_cases/test_46.txt
+Elapsed: 24809.374441491 seconds
+Output:
+17
+13 5
+
+===============================
+File: test_cases/test_11.txt
+Elapsed: 25040.867762472 seconds
+Output:
+40
+4 11 7 14
+
+===============================
+File: test_cases/test_2.txt
+Elapsed: 25307.790521309 seconds
+Output:
+33
+5 10 14 11 1
+

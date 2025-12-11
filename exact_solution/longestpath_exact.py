@@ -52,28 +52,19 @@ def find_path():
     # longest path weight, longest path
     biggest = [float('-inf'), None]
     for path_length in range(2, len(graph) + 1):
+        # Permuted vertices --> no repeated vertices --> no cycles
         for combo in itertools.permutations(graph.keys(), path_length):
-            # Maintain a set of visited vertices to track cycles
-            # vertices_seen = set()
             combo_weight = 0
-            
-            # check for legality
             still_legal = True
             this_path = []
+
             for u, v in pairwise(combo):
                 if debug:
                     print(f"testing ({u}, {v})")
 
-                # Check for cycles
-                # if v in vertices_seen:
-                #     still_legal = False
-                #     break
-
                 # Check for legality
                 if v in graph[u]:
                     combo_weight += graph[u][v]
-                    # vertices_seen.add(u)
-                    # vertices_seen.add(v)
                     this_path.append((u, v))
 
                 else:
