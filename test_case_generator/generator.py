@@ -17,10 +17,10 @@ Randomization process overview:
 
 
 # Constants
-NUM_CASES = 30
-MIN_EDGES = 600 # forced to be at least 1
-MAX_EDGES = 5000
-MIN_VERTICES = 300 # forced to be at least 2
+NUM_CASES = 20
+MIN_EDGES = 5000 # forced to be at least 1
+MAX_EDGES = 20000
+MIN_VERTICES = 500 # forced to be at least 2
 MAX_VERTICES = 750
 MAX_WEIGHT = 1000
 ALLOW_DUPLICATE_EDGES = False  # can two edges u->v with different weights exist?
